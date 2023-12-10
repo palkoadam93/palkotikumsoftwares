@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image:url('creative.jpg');
+    background-image:url('25328.jpg');
     background-size: 100%;
     background-attachment: fixed;
     color: white;
@@ -62,7 +62,7 @@ nav a {
     display: inline-block;
     text-align: center;
     padding: 1em 0;
-    width: 10em;
+    width: 8em;
     border-bottom: 5px solid transparent;
 }
 
@@ -72,8 +72,6 @@ nav a:hover {
     border-bottom: 5px solid orange;
 }
 
-nav img {display: none;}
-
 #header{
     position: sticky;
     top: 0;
@@ -81,7 +79,7 @@ nav img {display: none;}
 
 @media (min-width: 768px){
     body {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
 
