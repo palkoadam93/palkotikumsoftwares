@@ -21,12 +21,9 @@ main h3 {
 main a {
     text-decoration: none;
     color: red;
-    display: block;
+    /*display: block;*/
 }
-main a:hover {
-    background-color: orange;
-    color: white;
-}
+main a:hover {text-decoration:underline;}
 
 main p, ul, ol {
     text-align: justify;
@@ -44,7 +41,7 @@ main iframe {
     margin: auto;
 }
 
-/* NYITÓOLDAL PROJEKTEK LINKJEI BEGIN */
+/* NYITÓOLDAL PROJEKTEK LINKJEI BEGIN 
 
 main article {
     margin: 1em auto;
@@ -67,4 +64,4 @@ main article a:hover {
     color: black;
 }
 
-/* NYITÓOLDAL PROJEKTEK LINKJEI END */
+NYITÓOLDAL PROJEKTEK LINKJEI END */
