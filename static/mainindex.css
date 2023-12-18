@@ -39,7 +39,6 @@ aside a, article a {
 }
 
 article a {
-    padding: .5em;
     display: block;
     text-decoration: none;
     color: black;
@@ -62,19 +61,7 @@ article h2 {
     font-family: 'Inter', sans-serif;
 }
 
-/*
-article a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    padding: 1em;
-    background-image: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.2));
-}
-*/
-
 aside, article {border-bottom: 1px dotted;}
-
 
 @media (min-width:768px){
     section {
