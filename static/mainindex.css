@@ -1,5 +1,7 @@
 #cim {
-    background-color: rgba(255,255,255,.8);
+    /*background-color: rgba(255,255,255,.8);*/
+    background-color: rgba(26,26,29,.9);
+    color: white;
     padding: 1em;
     text-align:center;
     border-bottom: 1px dotted;
@@ -21,9 +23,11 @@
 }
 
 aside {
-    background-color: rgba(255,255,255,.8);
+    /*background-color: rgba(255,255,255,.8);*/
+    background-color: rgba(26,26,29,.9);
     padding: 0 1em 1em 1em;
     border-right:1px dotted;
+    color: white;
 }
 
 aside h1, aside h2 {
@@ -36,14 +40,21 @@ aside h2 {
     padding: .5em;
 }
 
-aside ol, aside p {line-height: 1.8em;}
+aside ol, aside p {
+    line-height: 1.8em;
+    margin: 0 0 0 1em;
+}
 
 article {
-    background-color: rgba(255,255,255,.8);
+    /*background-color: rgba(255,255,255,.8);*/
+    background-color: rgba(26,26,29,.9);
 }
 
 article h2 {
-    background-image: linear-gradient(to right, rgba(255,255,255,0), white, rgba(255,255,255,0));
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0), white, rgba(255,255,255,0));*/
+    color: white;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
     padding: .5em;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -54,7 +65,7 @@ aside, article {border-bottom: 1px dotted;}
 aside a, article a {
     display: block;
     text-decoration: none;
-    color: red;
+    color: yellow;
 }
 
 aside a:hover {text-decoration:underline;}
@@ -62,7 +73,7 @@ aside a:hover {text-decoration:underline;}
 article a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: yellow;
     cursor: pointer;
     padding: 1em;
 }
