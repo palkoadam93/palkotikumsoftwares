@@ -52,7 +52,7 @@ header h2 {
 nav {
     text-align: center;
     /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
-    background-color: rgba(26,26,29,.9);
+    background-color: rgba(26,26,29,.8);
     border-bottom: 1px solid white;
 }
 
