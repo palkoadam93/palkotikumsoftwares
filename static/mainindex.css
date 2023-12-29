@@ -22,6 +22,17 @@
     text-align: justify;
 }
 
+main h1 {
+    /*background-image: linear-gradient(to right, rgba(255,255,255,0),  red, rgba(255,255,255,0));*/
+    background-color: rgba(195,7,63,.8);
+    padding: .5em;
+    text-align: center;
+    margin: 0;
+    color: white;
+    /*font-weight: bold;*/
+    font-family: 'Inter', sans-serif;
+}
+
 section {border-bottom: 1px dotted white;}
 
 aside {
