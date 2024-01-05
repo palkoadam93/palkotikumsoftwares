@@ -17,7 +17,6 @@ header {
     text-align: center;
     position: sticky;
     top: 0;
-    padding: 2em 10px;
 }
 
 header h1 {
@@ -54,6 +53,9 @@ nav {
     /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
     background-color: rgba(26,26,29,.8);
     border-bottom: 1px solid white;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 nav a {
@@ -61,10 +63,8 @@ nav a {
     /*background-image: linear-gradient(to right, red, rgba(255,255,255,.8));*/
     font-weight: bold;
     color: white;
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
-    padding: 1em 0;
-    width: 8em;
 }
 
 nav a:hover {
@@ -86,6 +86,8 @@ nav a:hover {
     display: block;
     background-color: rgb(26,26,29);
     font-weight: normal;
+    border-bottom: 1px dotted white;
+    text-align: left;
   }
   .dropdown:hover .dropdown-content {display: block;}
 /* ======== DROPDOWN MENÜ END ======== */
@@ -133,6 +135,10 @@ footer a:hover {
         background-attachment: fixed;
     }
 
+    header {
+        padding: 2em 10px;
+    }
+
     header h1 {
         font-size: 4em;
     }
@@ -140,5 +146,16 @@ footer a:hover {
     header h2 {
         letter-spacing: 30px;
         margin-right: -30px;
+    }
+
+    nav {
+        display: block;
+        grid-template-columns:none;
+    }
+
+    nav a {
+        padding: 1em 0;
+        width: 8em;
+        display: inline-block;
     }
 }
