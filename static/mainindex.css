@@ -25,16 +25,14 @@
 main h1 {
     /*background-image: linear-gradient(to right, rgba(255,255,255,0),  red, rgba(255,255,255,0));*/
     /*background-color: rgba(195,7,63,.8);*/
-    
     margin: 0;
-    /*font-weight: bold;*/
-    font-family: 'Inter', sans-serif;
     background-color: rgba(26,26,29,.8);
     border-bottom: 1px dotted white;
 }
 
 main h1 a {
     text-decoration:none;
+    font-family: 'Inter', sans-serif;
     color: yellow;
     display: block;
     padding: .5em;
