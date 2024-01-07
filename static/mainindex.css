@@ -106,10 +106,6 @@ article a:hover {
 }
 
 @media (min-width:768px){
-    .cim, main {
-        width: 80%;
-        margin: auto;
-    }
     section {
         display: grid;
         grid-template-columns: 50% 50%;

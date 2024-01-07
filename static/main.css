@@ -129,6 +129,8 @@ footer a:hover {
         background-image:url('25328.jpg');
         background-size: 100%;
         background-attachment: fixed;
+        width: 80%;
+        margin: auto;
     }
 
     header {
@@ -153,10 +155,5 @@ footer a:hover {
         padding: 1em 0;
         width: 8em;
         display: inline-block;
-    }
-
-    footer {
-        width: 80%;
-        margin: auto;
     }
 }
