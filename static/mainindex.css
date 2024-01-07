@@ -2,18 +2,18 @@
     /*background-color: rgba(255,255,255,.8);*/
     background-color: rgba(26,26,29,.8);
     color: white;
-    padding: 1em;
+    padding: 1rem;
     text-align:center;
     border-bottom: 1px dotted white;
 }
 
 .cim h1 {
-    margin:1em;
+    margin:1rem;
     font-family: 'Inter', sans-serif;
 }
 
 .cim h2 {
-    margin: 1em 0;
+    margin: 1rem 0;
     text-align: left;
     font-family: 'Inter', sans-serif;
 }
@@ -22,24 +22,25 @@
     text-align: justify;
 }
 
-main h1 {
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0),  red, rgba(255,255,255,0));*/
-    /*background-color: rgba(195,7,63,.8);*/
+#fo a {
+    display: block;
     margin: 0;
     background-color: rgba(26,26,29,.8);
     border-bottom: 1px dotted white;
+    text-decoration: none;
+    color: white;
 }
 
-main h1 a {
-    text-decoration:none;
-    font-family: 'Inter', sans-serif;
-    color: yellow;
-    display: block;
-    padding: .5em;
-}
-main h1 a:hover {
+#fo a:hover {
     background-color: rgba(195,7,63,.8);
-    color: white;
+}
+#fo p {
+    padding: 1rem 1rem 0 1rem;
+}
+#fo h1 {
+    font-family: 'Inter', sans-serif;
+    display: block;
+    padding: 1rem;
 }
 
 section {border-bottom: 1px dotted white;}
