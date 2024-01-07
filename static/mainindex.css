@@ -106,7 +106,7 @@ article a:hover {
 }
 
 @media (min-width:768px){
-    .cim, #fo {
+    .cim, main {
         width: 80%;
         margin: auto;
     }
