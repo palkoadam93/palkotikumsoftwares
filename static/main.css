@@ -15,8 +15,6 @@ header {
     background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
     color: white;
     text-align: center;
-    position: sticky;
-    top: 0;
 }
 
 header h1 {
@@ -49,11 +47,14 @@ header h2 {
 nav {
     text-align: center;
     /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
-    background-color: rgba(26,26,29,.8);
+    background-color: rgb(26,26,29);
     border-bottom: 1px solid white;
 
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+
+    /*position: sticky; top: 0;*/
+    overflow: hidden;
 }
 
 nav a {
@@ -90,10 +91,13 @@ nav a:hover {
   .dropdown:hover .dropdown-content {display: block;}
 /* ======== DROPDOWN MENÜ END ======== */
 
-#header{
-    position: sticky;
+/* ======== STICKY NAVBAR BEGIN ======== */
+.sticky {
+    position: fixed;
     top: 0;
+    width: 100%;
 }
+/* ======== STICKY NAVBAR END ======== */
 
 footer {
     background-color: rgba(195,7,63,.8);
@@ -149,7 +153,9 @@ footer a:hover {
     nav {
         display: block;
         grid-template-columns:none;
+        
     }
+    nav ul {width: 80%;}
 
     nav a {
         padding: 1em 0;
