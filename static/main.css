@@ -15,6 +15,8 @@ header {
     background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
     color: white;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -47,13 +49,11 @@ header h2 {
 nav {
     text-align: center;
     /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
-    background-color: rgb(26,26,29);
+    background-color: rgba(26,26,29,.8);
     border-bottom: 1px solid white;
 
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-
-    /*overflow: hidden;*/
 }
 
 nav a {
@@ -90,16 +90,10 @@ nav a:hover {
   .dropdown:hover .dropdown-content {display: block;}
 /* ======== DROPDOWN MENÜ END ======== */
 
-/* ======== STICKY NAVBAR BEGIN ======== */
-.sticky {
-    position: fixed;
+#header{
+    position: sticky;
     top: 0;
-    width: 100%;
 }
-.sticky + .cim {
-    padding-top: 20em;
-  }
-/* ======== STICKY NAVBAR END ======== */
 
 footer {
     background-color: rgba(195,7,63,.8);
@@ -132,19 +126,19 @@ footer a:hover {
 
 @media (min-width: 768px){
     body {
+        width: 80%;
+        margin: auto;
         background-image:url('25328.jpg');
         background-size: 100%;
         background-attachment: fixed;
-        width: 80%;
-        margin: auto;
     }
 
     header {
-        padding: 2rem 10px;
+        padding: 2em 10px;
     }
 
     header h1 {
-        font-size: 4rem;
+        font-size: 4em;
     }
 
     /*header h2 {
@@ -158,9 +152,8 @@ footer a:hover {
     }
 
     nav a {
-        padding: 1rem 0;
-        width: 8rem;
+        padding: 1em 0;
+        width: 8em;
         display: inline-block;
     }
-    .sticky {width: 80%;}
 }
