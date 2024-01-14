@@ -153,13 +153,12 @@ footer a:hover {
     nav {
         display: block;
         grid-template-columns:none;
-        
     }
-    nav ul {width: 80%;}
 
     nav a {
         padding: 1em 0;
         width: 8em;
         display: inline-block;
     }
+    .sticky {width: 80%;}
 }
