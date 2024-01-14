@@ -19,6 +19,11 @@ main h3 {
     font-variant: small-caps;
 }
 
+main h4 {
+    color: white;
+    padding: 1rem;
+}
+
 main a {
     text-decoration: none;
     color: yellow;
