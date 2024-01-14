@@ -149,12 +149,14 @@ footer a:hover {
     nav {
         display: block;
         grid-template-columns:none;
-        
     }
 
     nav a {
         padding: .5rem 0;
         width: 8rem;
         display: inline-block;
+    }
+    .dropdown-content a {
+        padding: .5rem;
     }
 }
