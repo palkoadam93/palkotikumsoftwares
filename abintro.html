@@ -87,15 +87,128 @@
           </ol>
         </aside>
         <article>
-          <h2>Relációs adatbázisok</h2>
           <a href="adatb/2tananyagok.html">Írásbeli tananyagok</a>
           <a href="adatb/3youtubetananyagok.html">YouTube tananyagok</a>
           <a href="adatb/sqelmeYT.html">SQeLme videói</a>
           <a href="adatb/basedataYT.html">Base Data videói</a>
           <a href="adatb/kezelokcli.html">MySQL</a>
           <a href="adatb/kezelokgui.html">Access és Base</a>
-  
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>I. Egy tábla</h2>
+          <p>Adatbázis. CREATE, ALTER, DROP, TRUNCATE</p>
+          <p>Tábla. CREATE, ALTER, DROP, TRUNCATE</p>
+          <p>Tábla. INSERT INTO, UPDATE, DELETE</p>
+          <p>Adattípusok. NULL. Konverzió</p>
+          <p>Rekord adattípus</p>
+          <p>Mező</p>
+          <p>Kulcs. Elsődleges kulcs. Összetett kulcs</p>
+          <p>Adatok redundanciája</p>
+          <p>Funkcionális függés, tranzitív függés</p>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:tipusok" target="_blank">Szit: SQL adattípusok</a></p>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:modositasok" target="_blank">Szit: SQL módosítások (DML)</a></p>
+        </aside>
+        <article>
+
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>II. Lekérdezések egy táblából</h2>
+          <p>SELECT mezők FROM tábla WHERE mezők</p>
+          <p>Záradékok:</p>
+          <ul>
+            <li>GROUP BY</li>
+            <li>HAVING</li>
+            <li>ORDER BY</li>
+            <li>DISTINCT</li>
+            <li>ASC</li>
+            <li>DESC</li>
+          </ul>
+          <p>Operátorok:</p>
+          <ul>
+            <li>=, <>, <, <=, >, >=, !=, ^⁼</li>
+            <li>LIKE / NOT LIKE</li>
+            <li>BETWEEN / NOT BETWEEN</li>
+            <li>IN / NOT IN</li>
+            <li>IS NULL / IS NOT NULL</li>
+            <li>AND / OR / NOT</li>
+            <li>TOP / LIMIT</li>
+          </ul>
+          <p>Függvények:</p>
+          <ul>
+            <li>SUM</li>
+            <li>COUNT</li>
+            <li>AVG</li>
+            <li>MIN</li>
+            <li>MAX</li>
+          </ul>
+          <p>Alias</p>
+          <p>Lekérdezés új nevű mezőbe</p>
+          <p>Számított mezők</p>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok</a></p>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:fueggvenyek" target="_blank">Szit: SQL függvények</a></p>
+        </aside>
+        <article>
+          
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>III. Több tábla</h2>
+          <p>1. Kapcsolatok:</p>
+          <ul>
+            <li>egy az egyhez (1:1) → férjek-feleségek</li>
+            <li>egy a többhöz (1:n) → tulajok-autók</li>
+            <li>több a többhöz (n:n) → tanárok-diákok</li>
+          </ul>
+          <p>Idegen kulcs</p>
+          <p>Kapcsolótábla:</p>
+          <ul>
+            <li>tábla1 - kapcsolótábla - tábla2</li>
+          </ul>
+          <p>(Lehet 1:n és n:n is, úgy lenne értelme)</p>
+
+          <p>2. Normálformák és normalizálás</p>
+          <p>(Elv: az adat nem ismétlődhet, de a kulcs igen?)</p>
+          <p>Funkcionális függés és tranzitív függés több tábla esetén</p>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:normalizalas" target="_blank">Szit: Normalizálás</a></p>
+        </aside>
+        <article>
+          
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>IV. Lekérdezések több táblából</h2>
+          <p>SELECT mezők FROM táblák WHERE mezők</p>
+          <p>JOIN:</p>
+          <ul>
+            <li>INNER</li>
+            <li>LEFT OUTER (LEFT)</li>
+            <li>RIGHT OUTER (RIGHT)</li>
+            <li>FULL OUTER (FULL)</li>
+            <li>SELF</li>
+            <li>CROSS</li>
+          </ul>
+          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:toebb_tabla" target="_blank">Szit: SQL több tábla</a></p>
+        </aside>
+        <article>
+          
+        </article>
+      </section>
+
+      <section>
+        <aside>
           <h2>NoSQL adatbázisok</h2>
+        </aside>
+        <article>
           <a href="nosql/xml.html">XML dokumentum és adatbáziskezelés</a>
           <a href="nosql/json.html">JSON dokumentum és adatbáziskezelés</a>
           <a href="nosql/grafab.html">Gráfadatbázis</a>
