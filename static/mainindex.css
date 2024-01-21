@@ -67,6 +67,7 @@ aside ol, aside p {
     line-height: 1.8em;
     margin: 0 0 0 1em;
 }
+aside p {text-align: justify;}
 
 article {
     /*background-color: rgba(255,255,255,.8);*/
