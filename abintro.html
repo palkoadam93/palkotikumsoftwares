@@ -98,18 +98,11 @@
 
       <section>
         <aside>
-          <h2>I. Egy tábla</h2>
-          <p>Adatbázis. CREATE, ALTER, DROP, TRUNCATE</p>
-          <p>Tábla. CREATE, ALTER, DROP, TRUNCATE</p>
-          <p>Tábla. INSERT INTO, UPDATE, DELETE</p>
-          <p>Adattípusok. NULL. Konverzió</p>
-          <p>Rekord adattípus</p>
-          <p>Mező</p>
-          <p>Kulcs. Elsődleges kulcs. Összetett kulcs</p>
-          <p>Adatok redundanciája</p>
-          <p>Funkcionális függés, tranzitív függés</p>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:tipusok" target="_blank">Szit: SQL adattípusok <i class="fa fa-external-link"></i></a></p>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:modositasok" target="_blank">Szit: SQL módosítások (DML) <i class="fa fa-external-link"></i></a></p>
+          <h2>I. Adatbázis (DDL)</h2>
+          <p>CREATE</p>
+          <p>ALTER</p>
+          <p>DROP</p>
+          <p>TRUNCATE</p>
         </aside>
         <article>
 
@@ -118,7 +111,38 @@
 
       <section>
         <aside>
-          <h2>II. Lekérdezések egy táblából</h2>
+          <h2>II. Egy tábla (DDL)</h2>
+          <p>CREATE</p>
+          <p>ALTER</p>
+          <p>DROP</p>
+          <p>TRUNCATE</p>
+        </aside>
+        <article>
+
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>III. Egy tábla adatai (DML)</h2>
+          <p>INSERT INTO</p>
+          <p>UPDATE</p>
+          <p>DELETE</p>
+          <p>Adattípusok. NULL. Konverzió</p>
+          <p>Rekord adatszerkezet</p>
+          <p>Mezők. Kulcs. Elsődleges kulcs. Összetett kulcs</p>
+          <p>Adatok redundanciája</p>
+          <p>Funkcionális függés, tranzitív függés</p>
+        </aside>
+        <article>
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:tipusok" target="_blank">Szit: SQL adattípusok <i class="fa fa-external-link"></i></a>
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:modositasok" target="_blank">Szit: SQL módosítások (DML) <i class="fa fa-external-link"></i></a>
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>IV. Lekérdezések egy táblából</h2>
           <p>SELECT mezők FROM tábla WHERE mezők</p>
           <p>Záradékok:</p>
           <ul>
@@ -150,18 +174,17 @@
           <p>Alias</p>
           <p>Lekérdezés új nevű mezőbe</p>
           <p>Számított mezők</p>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok <i class="fa fa-external-link"></i></a></p>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:fueggvenyek" target="_blank">Szit: SQL függvények <i class="fa fa-external-link"></i></a></p>
         </aside>
         <article>
-          
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok <i class="fa fa-external-link"></i></a>
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:fueggvenyek" target="_blank">Szit: SQL függvények <i class="fa fa-external-link"></i></a>
         </article>
       </section>
 
       <section>
         <aside>
-          <h2>III. Több tábla</h2>
-          <p>1. Kapcsolatok:</p>
+          <h2>V. Több tábla</h2>
+          <p>Kapcsolatok:</p>
           <ul>
             <li>egy az egyhez (1:1) → férjek-feleségek</li>
             <li>egy a többhöz (1:n) → tulajok-autók</li>
@@ -173,11 +196,6 @@
             <li>tábla1 - kapcsolótábla - tábla2</li>
           </ul>
           <p>(Lehet 1:n és n:n is, úgy lenne értelme)</p>
-
-          <p>2. Normálformák és normalizálás</p>
-          <p>(Elv: az adat nem ismétlődhet, de a kulcs igen?)</p>
-          <p>Funkcionális függés és tranzitív függés több tábla esetén</p>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:normalizalas" target="_blank">Szit: Normalizálás <i class="fa fa-external-link"></i></a></p>
         </aside>
         <article>
           
@@ -186,7 +204,18 @@
 
       <section>
         <aside>
-          <h2>IV. Lekérdezések több táblából</h2>
+          <h2>VI. Normálformák és normalizálás</h2>
+          <p>(Elv: az adat nem ismétlődhet, de a kulcs igen?)</p>
+          <p>Funkcionális függés és tranzitív függés több tábla esetén</p>
+        </aside>
+        <article>
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:normalizalas" target="_blank">Szit: Normalizálás <i class="fa fa-external-link"></i></a>
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>VII. Lekérdezések több táblából</h2>
           <p>SELECT mezők FROM táblák WHERE mezők</p>
           <p>JOIN:</p>
           <ul>
@@ -197,10 +226,9 @@
             <li>SELF</li>
             <li>CROSS</li>
           </ul>
-          <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:toebb_tabla" target="_blank">Szit: SQL több tábla <i class="fa fa-external-link"></i></a></p>
         </aside>
         <article>
-          
+          <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:toebb_tabla" target="_blank">Szit: SQL több tábla <i class="fa fa-external-link"></i></a>
         </article>
       </section>
 
