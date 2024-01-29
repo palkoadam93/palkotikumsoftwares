@@ -87,9 +87,9 @@
       <section>
         <aside>
           <h2>I. Adatbázis (DDL)</h2>
-          <p>CREATE</p>
+          <p>CREATE DATABASE név</p>
           <p>ALTER</p>
-          <p>DROP</p>
+          <p>DROP DATABASE név</p>
           <p>TRUNCATE</p>
         </aside>
         <article>
@@ -100,9 +100,9 @@
       <section>
         <aside>
           <h2>II. Egy tábla (DDL)</h2>
-          <p>CREATE</p>
+          <p>CREATE TABLE név</p>
           <p>ALTER</p>
-          <p>DROP</p>
+          <p>DROP TABLE név</p>
           <p>TRUNCATE</p>
         </aside>
         <article>
@@ -113,14 +113,20 @@
       <section>
         <aside>
           <h2>III. Egy tábla adatai (DML)</h2>
-          <p>INSERT INTO</p>
+          <p>INSERT INTO táblanév (mező, mező, mező, ...) VALUES (érték, érték, érték, ...)</p>
           <p>UPDATE</p>
-          <p>DELETE</p>
-          <p>Adattípusok. NULL. Konverzió</p>
-          <p>Rekord adatszerkezet</p>
-          <p>Mezők. Kulcs. Elsődleges kulcs. Összetett kulcs</p>
-          <p>Adatok redundanciája</p>
-          <p>Funkcionális függés, tranzitív függés</p>
+          <p>DELETE mező FROM tábla WHERE mező</p>
+          <p>Adattípusok: szám, szöveg, logikai, dátum és idő</p>
+          <p>NULL: annak jelzése, hogy nincs adat</p>
+          <p>Konverzió: adattípus módosítása másik adattípussá</p>
+          <p>Rekord adatszerkezet: a tábla egy sora, eltérő típusú adatok listája</p>
+          <p>Mező: a tábla egy oszlopa, azonos típusú adatokat tartalmaz</p>
+          <p>Kulcs: az a mező, amelyben minden érték eltér, így egyértelműen azonosítja a sorokat</p>
+          <p>Elsődleges kulcs: több kulcs esetén a kijelölt mező, amelyet kulcsnak használunk</p>
+          <p>Összetett kulcs: ha nincs egy kulcsnak kijelölhető mező, akkor több mezőt együttesen használunk kulcsnak</p>
+          <p>Adatok redundanciája: adatok ismétlődése a táblában, amelyet mindig el kell kerülni, ki kell küszöbölni</p>
+          <p>Funkcionális függés: adott rekordban az egyik értékből következtethető a többi</p>
+          <p>Tranzitív függés: ugyanez több értéken keresztül</p>
         </aside>
         <article>
           <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:tipusok" target="_blank">Szit: SQL adattípusok <i class="fa fa-external-link"></i></a>
@@ -136,32 +142,39 @@
           <ul>
             <li>GROUP BY</li>
             <li>HAVING</li>
-            <li>ORDER BY</li>
-            <li>DISTINCT</li>
-            <li>ASC</li>
-            <li>DESC</li>
+            <li>ORDER BY mező - adott mező értékeit sorba rendezzük, és vele a rekordokat is</li>
+            <li>DISTINCT - az ismétlődéseket elkerüljük</li>
+            <li>ASC - adott mező értékei növekvő sorrendben jelennek meg</li>
+            <li>DESC - adott mező értékei csökkenő sorrendben jelennek meg</li>
           </ul>
           <p>Operátorok:</p>
           <ul>
             <li>=, <>, <, <=, >, >=, !=, ^⁼</li>
-            <li>LIKE / NOT LIKE</li>
-            <li>BETWEEN / NOT BETWEEN</li>
-            <li>IN / NOT IN</li>
-            <li>IS NULL / IS NOT NULL</li>
-            <li>AND / OR / NOT</li>
-            <li>TOP / LIMIT</li>
+            <li>LIKE - adott érték megkeresése egy mezőben</li>
+            <li>NOT LIKE - adott érték kizárása egy mezőben</li>
+            <li>BETWEEN - két érték közötti értékek megkeresése</li>
+            <li>NOT BETWEEN - két értéken kívül eső értékek megkeresése</li>
+            <li>IN - adott intervallumba eső értékek megkeresése</li>
+            <li>NOT IN - adott intervallumon kívül eső értékek megkeresése</li>
+            <li>IS NULL - adatot nem tartalmazó cellák megkeresése</li>
+            <li>IS NOT NULL - adatot tartalmazó cellák megkeresése</li>
+            <li>AND</li>
+            <li>OR</li>
+            <li>NOR</li>
+            <li>TOP</li>
+            <li>LIMIT</li>
           </ul>
           <p>Függvények:</p>
           <ul>
-            <li>SUM</li>
-            <li>COUNT</li>
-            <li>AVG</li>
-            <li>MIN</li>
-            <li>MAX</li>
+            <li>SUM - összesítés</li>
+            <li>COUNT - megszámlálás</li>
+            <li>AVG - átlag</li>
+            <li>MIN - legalacsonyabb érték, legkisebb elem</li>
+            <li>MAX - legmagasabb érték, legnagyobb elem</li>
           </ul>
-          <p>Alias</p>
-          <p>Lekérdezés új nevű mezőbe</p>
-          <p>Számított mezők</p>
+          <p>Alias: lekérdezéskor a megjelenő mező neve nem a sajátja, hanem átnevezzük</p>
+          <p>Lekérdezés új nevű mezőbe: ha a lekérdezésben megjelenő mezőnek más nevet akarunk adni</p>
+          <p>Számított mezők: a táblában nem létezik az a mező, amely a lekérdezésben megjelenik, mert más értékekből számítjuk az értékeit</p>
         </aside>
         <article>
           <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok <i class="fa fa-external-link"></i></a>
@@ -172,14 +185,14 @@
       <section>
         <aside>
           <h2>V. Több tábla</h2>
-          <p>Kapcsolatok:</p>
+          <p>Kapcsolatok: két táblában két adott mező értékei összefüggenek valamilyen szempontból</p>
           <ul>
             <li>egy az egyhez (1:1) → férjek-feleségek</li>
             <li>egy a többhöz (1:n) → tulajok-autók</li>
             <li>több a többhöz (n:n) → tanárok-diákok</li>
           </ul>
-          <p>Idegen kulcs</p>
-          <p>Kapcsolótábla:</p>
+          <p>Idegen kulcs: egy táblában a kulcsmező a másik tábla egyik mezője, amelyet hozzákapcsolunk</p>
+          <p>Kapcsolótábla: olyan tábla, amely két másik táblával áll kapcsolatban, így tranzitíven őket is összekapcsolja</p>
           <ul>
             <li>tábla1 - kapcsolótábla - tábla2</li>
           </ul>
@@ -205,18 +218,33 @@
         <aside>
           <h2>VII. Lekérdezések több táblából</h2>
           <p>SELECT mezők FROM táblák WHERE mezők</p>
-          <p>JOIN:</p>
+          <p>Két táblából kérünk le adatokat, és a lekérdezés eredménye egyetlen táblában jelenik meg. Ilyenkor a két tábla értékeit össze kell kapcsolni, erre való a UNION és a JOIN utasítás.</p>
+          <p>UNION: azonos felépítésű táblák esetén</p>
+          <p>JOIN: különböző felépítésű táblák esetén</p>
           <ul>
-            <li>INNER</li>
-            <li>LEFT OUTER (LEFT)</li>
-            <li>RIGHT OUTER (RIGHT)</li>
-            <li>FULL OUTER (FULL)</li>
-            <li>SELF</li>
-            <li>CROSS</li>
+            <li>INNER JOIN</li>
+            <li>LEFT OUTER JOIN vagy LEFT JOIN: a jobb oldali tábla adott értékeihez a bal oldali tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk</li>
+            <li>RIGHT OUTER JOIN vagy RIGHT: a bal oldali tábla adott értékeihez a jobb oldali tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk</li>
+            <li>FULL OUTER JOIN vagy FULL JOIN: mindkét tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk össze</li>
+            <li>SELF JOIN</li>
+            <li>CROSS JOIN</li>
           </ul>
         </aside>
         <article>
           <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:toebb_tabla" target="_blank">Szit: SQL több tábla <i class="fa fa-external-link"></i></a>
+        </article>
+      </section>
+
+      <section>
+        <aside>
+          <h2>VIII. Felhasználó és adatbázis-kezelő</h2>
+          <p>GRANT</p>
+          <p>REVOKE</p>
+          <p>MySQL és MariaDB</p>
+          <p>XAMPP közvetlen beírás, szkript futtatása</p>
+        </aside>
+        <article>
+
         </article>
       </section>
 
