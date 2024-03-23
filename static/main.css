@@ -20,7 +20,6 @@ header {
     background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
     color: white;
     text-align: center;
-    padding: 2em 10px;
     transition: .5s;
 }
 
@@ -131,10 +130,6 @@ footer a:hover {
         background-image:url('25328.jpg');
         background-size: 100%;
         background-attachment: fixed;
-    }
-
-    header {
-        padding: 2em 10px;
     }
 
     header h1 {
