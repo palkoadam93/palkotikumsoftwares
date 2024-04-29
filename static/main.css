@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-image:url('25328kicsi.jpg');
+    /*background-image:url('25328kicsi.jpg');
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 * {
@@ -11,16 +11,25 @@ body {
 }
 
 #header{
-    position: sticky;
+    /*position: sticky;
     top: 0;
+    z-index: 100;*/
+    background-image: url('falcon-header.jpg');
+    background-size: 100%;
+    background-position: center;
 }
 
 header {
     /*background-image: linear-gradient(to bottom right, red, rgba(255,255,255,.8));*/
-    background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));
-    color: white;
+    /*background-image: linear-gradient(to bottom right, red,  rgb(195,7,63));*/
+    
     text-align: center;
     transition: .5s;
+}
+
+#fej {
+    background-color: rgba(255, 155, 106, .4);
+    padding: 3em;
 }
 
 header h1 {
@@ -33,7 +42,7 @@ header a {
     padding: 0;
     text-decoration: none;
     background: none;
-    color: white;
+    color: black;
     display: inline;
 }
 
@@ -53,8 +62,7 @@ header h2 {
 nav {
     text-align: center;
     /*background-image: linear-gradient(to top, white, rgba(255,255,255,.5));*/
-    background-color: rgba(26,26,29,.8);
-    border-bottom: 1px solid white;
+    background-color: rgba(26,26,29);
 
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -123,18 +131,16 @@ footer a:hover {
     transition: .5s;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1081px){
     body {
         width: 80%;
         margin: auto;
-        background-image:url('25328.jpg');
-        background-size: 100%;
-        background-attachment: fixed;
     }
-
     header h1 {
         font-size: 4em;
     }
+
+    #fej {padding: 5em;}
 
     /*header h2 {
         letter-spacing: 30px;

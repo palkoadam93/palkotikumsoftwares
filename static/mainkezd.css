@@ -1,10 +1,11 @@
+body {background: black;}
+
 .cim {
     /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29,.9);
-    color: white;
-    padding: 1rem;
+    /*background-color: rgba(26,26,29,.9);*/
+    background: #FF9B6A;
+    padding: 3rem;
     text-align:center;
-    border-bottom: 1px dotted;
 }
 
 .cim h1 {
@@ -22,7 +23,6 @@
     text-align: justify;
 }
 
-
 section {
     position: relative;
     display: block;
@@ -31,12 +31,32 @@ section {
     color: white;
 }
 
-section a {
-    background-color: rgba(26,26,29,.5);
-    display: block;
-    padding: 3em 0;
-    text-decoration: none;
+.sarga {
+    background: #FF5151;
+    color: black;
+}
+.coral {
+    background: #FF9B6A;
     color: white;
+}
+.blue {
+    background: #191970;
+    color: white;
+}
+.cyan {
+    background: cyan;
+    color: black;
+}
+.white {
+    background: white;
+    color: black;
+}
+
+section a {
+    display: block;
+    padding: 5em 0;
+    color: white;
+    text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
 }
@@ -46,8 +66,12 @@ section a:hover {
     color: black;
 }
 
+.fekete {
+    color: black;
+}
+
 #html {
-    background-image: url('technology-5901615_640.jpg');
+    background-image: url('25328.jpg');
     background-size:cover;
     background-position:center;
 }
@@ -82,74 +106,18 @@ section a:hover {
     background-position:center;
 }
 
-.sarga {background-color: #FF5151;}
-
-aside {
-    /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29.9);
-    padding: 0 1em 1em 1em;
-    border-right:1px dotted;
-    color: white;
-}
-
-aside h1, aside h2 {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-}
-
-aside h2 {
-    /*font-size: 1.2em;*/
-    padding: .5em;
-}
-
-aside ol, aside p {
-    line-height: 1.8em;
-    margin: 0 0 0 1em;
-}
-
-article {
-    /*background-color: rgba(255,255,255,.8);*/
-    background-color: rgba(26,26,29,.9);
-}
-
-article h2 {
-    /*background-image: linear-gradient(to right, rgba(255,255,255,0), white, rgba(255,255,255,0));*/
-    color: white;
-    border-top: 1px dotted white;
-    border-bottom: 1px dotted white;
-    padding: .5em;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-}
-
-aside {border-bottom: 1px dotted white;}
-
-aside a, article a {
-    display: block;
-    text-decoration: none;
-    color: yellow;
-}
-
-aside a:hover {text-decoration:underline;}
-
-article a {
-    display: block;
-    text-decoration: none;
-    color: yellow;
-    cursor: pointer;
-    padding: 1em;
-}
-
-article a:hover {
-    /*background-image: linear-gradient(to right, white, rgba(255,0,0,.8));*/
-    background-color: white;
-    color: black;
-}
-
-@media (min-width:768px){
+@media (min-width:1081px){
+    #egy {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+    }
+    #ketto {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+    }
     main {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        /*grid-template-columns: 50% 50%;*/
+        /*grid-template-columns: 25% 25% 25% 25%;*/
+        grid-template-columns: 50% 50%;
     }
 }
