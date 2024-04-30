@@ -14,9 +14,11 @@ body {
     /*position: sticky;
     top: 0;
     z-index: 100;*/
-    background-image: url('falcon-header.jpg');
+    /*background-image: url('falcon-header.jpg');
     background-size: 100%;
-    background-position: center;
+    background-position: center;*/
+    background-image: linear-gradient(to bottom right, red, rgb(195,7,63));
+    color: white;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
 }
 
 #fej {
-    background-color: rgba(255, 155, 106, .4);
+    /*background-color: rgba(255, 155, 106, .4);*/
     padding: 3em;
 }
 
