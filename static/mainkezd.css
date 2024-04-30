@@ -3,7 +3,8 @@ body {background: black;}
 .cim {
     /*background-color: rgba(255,255,255,.8);*/
     /*background-color: rgba(26,26,29,.9);*/
-    background: #FF9B6A;
+    /*background: #FF9B6A;*/
+    background: white;
     padding: 3rem;
     text-align:center;
 }
