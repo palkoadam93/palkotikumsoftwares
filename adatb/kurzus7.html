@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+            
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/oldalak.css">
+            
+    <title>Palkotikum</title>
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--INTER FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap" rel="stylesheet">
+    <!--PHILOSOPHER FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <!--JULIUS SANS ONE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--DOSIS FONT a főoldalhoz-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="header">
+      <header id="fej">
+        <h1><a href="../index.html" title="Kezdőlap">Palkotikum</a></h1>
+        <h2>SOFTWARES</h2>
+      </header>
+      
+    </div>
+
+    <main>
+      <h1>VII. Lekérdezések több táblából</h1>
+
+      <p>SELECT mezők FROM táblák WHERE mezők</p>
+      <p>Két táblából kérünk le adatokat, és a lekérdezés eredménye egyetlen táblában jelenik meg. Ilyenkor a két tábla értékeit össze kell kapcsolni, erre való a UNION és a JOIN utasítás.</p>
+      <p>UNION: azonos felépítésű táblák esetén</p>
+      <p>JOIN: különböző felépítésű táblák esetén</p>
+      <ul>
+        <li>INNER JOIN</li>
+        <li>LEFT OUTER JOIN vagy LEFT JOIN: a jobb oldali tábla adott értékeihez a bal oldali tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk</li>
+        <li>RIGHT OUTER JOIN vagy RIGHT: a bal oldali tábla adott értékeihez a jobb oldali tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk</li>
+        <li>FULL OUTER JOIN vagy FULL JOIN: mindkét tábla kapcsolódó értékeit tartalmazó egész rekordjait kapcsoljuk össze</li>
+        <li>SELF JOIN</li>
+        <li>CROSS JOIN</li>
+      </ul>
+
+      <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:toebb_tabla" target="_blank">Szit: SQL több tábla <i class="fa fa-external-link"></i></a>
+    </main>
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+    <script src="../static/shrink.js"></script>
+  </body>
+</html>
