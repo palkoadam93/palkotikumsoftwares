@@ -1,86 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
-            
+
+    <title>Softwares</title>
     <link rel="stylesheet" href="../static/main.css">
-    <link rel="stylesheet" href="../static/oldalak.css">
-            
-    <title>Palkotikum</title>
-            
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--INTER FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap" rel="stylesheet">
-    <!--PHILOSOPHER FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
-    <!--JULIUS SANS ONE FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!--DOSIS FONT a főoldalhoz-->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-            
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="header">
-      <header id="fej">
-        <h1><a href="../index.html" title="Kezdőlap">Palkotikum</a></h1>
-        <h2>SOFTWARES</h2>
-      </header>
-      
-    </div>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1>Softwares</h1>
+    </header>
 
     <main>
-      <h1>IV. Lekérdezések egy táblából</h1>
+      <aside><a href="../abintro.html">Vissza</a></aside>
+      <section>
+        <h1>IV. Lekérdezések egy táblából</h1>
 
-      <p>SELECT mezők FROM tábla WHERE mezők</p>
-      <p>Záradékok:</p>
-      <ul>
-        <li>GROUP BY</li>
-        <li>HAVING</li>
-        <li>ORDER BY mező - adott mező értékeit sorba rendezzük, és vele a rekordokat is</li>
-        <li>DISTINCT - az ismétlődéseket elkerüljük</li>
-        <li>ASC - adott mező értékei növekvő sorrendben jelennek meg</li>
-        <li>DESC - adott mező értékei csökkenő sorrendben jelennek meg</li>
-      </ul>
-      <p>Operátorok:</p>
-      <ul>
-        <li>=, <>, <, <=, >, >=, !=, ^⁼</li>
-        <li>LIKE - adott érték megkeresése egy mezőben</li>
-        <li>NOT LIKE - adott érték kizárása egy mezőben</li>
-        <li>BETWEEN - két érték közötti értékek megkeresése</li>
-        <li>NOT BETWEEN - két értéken kívül eső értékek megkeresése</li>
-        <li>IN - adott intervallumba eső értékek megkeresése</li>
-        <li>NOT IN - adott intervallumon kívül eső értékek megkeresése</li>
-        <li>IS NULL - adatot nem tartalmazó cellák megkeresése</li>
-        <li>IS NOT NULL - adatot tartalmazó cellák megkeresése</li>
-        <li>AND</li>
-        <li>OR</li>
-        <li>NOR</li>
-        <li>TOP</li>
-        <li>LIMIT</li>
-      </ul>
-      <p>Függvények:</p>
-      <ul>
-        <li>SUM - összesítés</li>
-        <li>COUNT - megszámlálás</li>
-        <li>AVG - átlag</li>
-        <li>MIN - legalacsonyabb érték, legkisebb elem</li>
-        <li>MAX - legmagasabb érték, legnagyobb elem</li>
-      </ul>
-      <p>Alias: lekérdezéskor a megjelenő mező neve nem a sajátja, hanem átnevezzük</p>
-      <p>Lekérdezés új nevű mezőbe: ha a lekérdezésben megjelenő mezőnek más nevet akarunk adni</p>
-      <p>Számított mezők: a táblában nem létezik az a mező, amely a lekérdezésben megjelenik, mert más értékekből számítjuk az értékeit</p>
-
-      <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok <i class="fa fa-external-link"></i></a>
-      <a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:fueggvenyek" target="_blank">Szit: SQL függvények <i class="fa fa-external-link"></i></a>
+        <p>SELECT mezők FROM tábla WHERE mezők</p>
+        <p>Záradékok:</p>
+        <ul>
+          <li>GROUP BY</li>
+          <li>HAVING</li>
+          <li>ORDER BY mező - adott mező értékeit sorba rendezzük, és vele a rekordokat is</li>
+          <li>DISTINCT - az ismétlődéseket elkerüljük</li>
+          <li>ASC - adott mező értékei növekvő sorrendben jelennek meg</li>
+          <li>DESC - adott mező értékei csökkenő sorrendben jelennek meg</li>
+        </ul>
+        <p>Operátorok:</p>
+        <ul>
+          <li>=, <>, <, <=, >, >=, !=, ^⁼</li>
+          <li>LIKE - adott érték megkeresése egy mezőben</li>
+          <li>NOT LIKE - adott érték kizárása egy mezőben</li>
+          <li>BETWEEN - két érték közötti értékek megkeresése</li>
+          <li>NOT BETWEEN - két értéken kívül eső értékek megkeresése</li>
+          <li>IN - adott intervallumba eső értékek megkeresése</li>
+          <li>NOT IN - adott intervallumon kívül eső értékek megkeresése</li>
+          <li>IS NULL - adatot nem tartalmazó cellák megkeresése</li>
+          <li>IS NOT NULL - adatot tartalmazó cellák megkeresése</li>
+          <li>AND</li>
+          <li>OR</li>
+          <li>NOR</li>
+          <li>TOP</li>
+          <li>LIMIT</li>
+        </ul>
+        <p>Függvények:</p>
+        <ul>
+          <li>SUM - összesítés</li>
+          <li>COUNT - megszámlálás</li>
+          <li>AVG - átlag</li>
+          <li>MIN - legalacsonyabb érték, legkisebb elem</li>
+          <li>MAX - legmagasabb érték, legnagyobb elem</li>
+        </ul>
+        <p>Alias: lekérdezéskor a megjelenő mező neve nem a sajátja, hanem átnevezzük</p>
+        <p>Lekérdezés új nevű mezőbe: ha a lekérdezésben megjelenő mezőnek más nevet akarunk adni</p>
+        <p>Számított mezők: a táblában nem létezik az a mező, amely a lekérdezésben megjelenik, mert más értékekből számítjuk az értékeit</p>
+  
+        <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:alapok" target="_blank">Szit: SQL alapok <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://szit.hu/doku.php?id=oktatas:adatbazis-kezeles:sql:fueggvenyek" target="_blank">Szit: SQL függvények <i class="fa fa-external-link"></i></a></p>
+      </section>
     </main>
     <footer>
-      <p>Csak az önálló tanulás bír tartós értékkel. <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
-    <script src="../static/shrink.js"></script>
   </body>
 </html>

@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="static/Palkotikumicon.png">
 
+    <title>Softwares</title>
     <link rel="stylesheet" href="static/main.css">
-    <link rel="stylesheet" href="static/mainindex.css">
-
-    <title>Palkotikum</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--INTER FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap" rel="stylesheet">
-    <!--PHILOSOPHER FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
-    <!--JULIUS SANS ONE FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!--DOSIS FONT a főoldalhoz-->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="header">
-      <header id="fej">
-        <h1><a href="index.html" title="Kezdőlap">Palkotikum</a></h1>
-        <h2>SOFTWARES</h2>
-      </header>
-      
-    </div>
-
-    <div class="cim">
-      <h1>Webalkalmazások</h1>
-    </div>
+    <header>
+      <a href="index.html"><img src="static/Palkotikumlogo2.png" alt="p"></a>
+      <h1>Softwares</h1>
+    </header>
 
     <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="weboldal.html">Weboldalkészítés</a></li>
+            <li><a href="progintro.html">Programozás</a></li>
+            <li><a href="abintro.html">Adatbázis-kezelés</a></li>
+            <li><a href="swfintro.html">Szoftverfejlesztés</a></li>
+            <li><a href="webalkintro.html">Webalkalmazások</a></li>
+            <li><a href="projektintro.html">Projektmunka</a></li>
+          </ul>
+        </nav>
+      </aside>
       <section>
-        <aside>
-          <h2>Webprogramozás</h2>
+        <h1>Programtanterv</h1>
+          <h3>Webprogramozás</h3>
           <ol>
             <li><a href="pttswft/webprog1.html">HTML5 és CSS3</a></li>
             <li><a href="pttswft/webprog2.html">JavaScript I.</a></li>
             <li><a href="pttswft/webprog3.html">JavaScript II.</a></li>
             <li><a href="pttswft/webprog4.html">CMS-rendszerek</a></li>
           </ol>
-        </aside>
-        <article>
-          <a href="webapp/haloesweb.html">Hálózati és webes programozás</a>
-          <a href="webapp/haloeswebkonyvek.html">Hálózati és webes programozás könyvek</a>
-        </article>
-      </section>
-
-      <section>
-        <aside>
-          <h2>Frontend programozás és tesztelés</h2>
+       
+          <p><a href="webapp/haloesweb.html">Hálózati és webes programozás</a></p>
+          <p><a href="webapp/haloeswebkonyvek.html">Hálózati és webes programozás könyvek</a></p>
+       
+          <h3>Frontend programozás és tesztelés</h3>
           <ol>
             <li><a href="pttswft/frontend1.html">JavaScript</a></li>
             <li><a href="pttswft/frontend2.html">AJAX</a></li>
@@ -64,15 +53,10 @@
             <li><a href="pttswft/frontend5.html">Integrációs tesztelés</a></li>
             <li><a href="pttswft/frontend6.html">Projektmunka</a></li>
           </ol>
-        </aside>
-        <article>
+        
           <a href="https://passed.hu/2023/egyeb-hu/webalkalmazas-komponensek-definicioi" target="_blank">Webalkalmazás komponensek definíciói <i class="fa fa-external-link"></i></a>
-        </article>
-      </section>
-
-      <section>
-        <aside>
-          <h2>Hálózat programozása és IoT (13)</h2>
+       
+          <h3>Hálózat programozása és IoT (13)</h3>
           <ol>
             <li><a href="ptt/hpr1.html">Programozási alapok Pythonban (4+16 óra)</a></li>
             <li><a href="ptt/hpr2.html">REST API kliensprogram készítése Pythonban (4+26 óra)</a></li>
@@ -80,7 +64,7 @@
             <li><a href="ptt/hpr4.html">IoT - a dolgok internete (4+24 óra)</a></li>
           </ol>
 
-          <h2>Backend programozás és tesztelés</h2>
+          <h3>Backend programozás és tesztelés</h3>
           <ol>
             <li><a href="pttswft/backend1.html">Backend készítésére szolgáló keretrendszer</a></li>
             <li><a href="pttswft/backend2.html">Rétegelt architektúra és ORM</a></li>
@@ -88,18 +72,13 @@
             <li><a href="pttswft/backend4.html">Integrációs tesztelés</a></li>
             <li><a href="pttswft/backend5.html">Projektmunka</a></li>
           </ol>
-        </aside>
-        <article>
-          <h2>Egyéb nyelvek</h2>
-          <a href="nyelvek/php.html">PHP</a>
-          <a href="nyelvek/typescript.html">TypeScript</a>
-          <a href="nyelvek/perl.html">Perl</a>
-        </article>
-      </section>
-
-      <section>
-        <aside>
-          <h2>Webfejlesztés 10 leckében</h2>
+       
+          <h1>Egyéb nyelvek</h1>
+          <p><a href="nyelvek/php.html">PHP</a></p>
+          <p><a href="nyelvek/typescript.html">TypeScript</a></p>
+          <p><a href="nyelvek/perl.html">Perl</a></p>
+       
+          <h1>Webfejlesztés 10 leckében</h1>
           <ol>
             <li><a href="#">Hálózati alapok (nem létezik)</a></li>
             <li><a href="#">Keretrendszerek (nem létezik)</a></li>
@@ -112,9 +91,6 @@
             <li><a href="nosql/xml.html">XML dokumentum és adatbáziskezelés</a></li>
             <li><a href="nosql/json.html">JSON dokumentum és adatbáziskezelés</a></li>
           </ol>
-        </aside>
-        <article>
-        </article>
       </section>
     </main>
     <footer>
