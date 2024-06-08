@@ -7,7 +7,14 @@ body {
 
 header {
     color: rgb(239, 62, 54);
-    padding: 0 .5rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid;
+}
+
+#fofejlec {
+    color: rgb(239, 62, 54);
+    border-bottom: 1px solid;
+    /*color:#0881A3;*/
 }
 
 header img {
@@ -17,7 +24,8 @@ header img {
 header h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 3px black;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    margin: 0;
 }
 
 main {
@@ -26,18 +34,8 @@ main {
     padding: 1em;
 }
 
-aside {padding-right: 1rem;}
+/*aside {padding-right: 1rem;}*/
 aside h1, aside p {padding-left: .5rem;}
-
-section h1 {
-    color: rgb(239, 62, 54);
-}
-
-#t {
-    list-style-type: none;
-    padding: 0;
-    border-bottom: 1px dotted;
-}
 
 aside a, section a {
     text-decoration: none;
@@ -56,6 +54,7 @@ nav a {
     text-decoration: none;
     padding: .5rem;
     font-size: 100%;
+    border-radius: 6px;
 }
 
 nav a:hover {
@@ -75,7 +74,55 @@ hr {margin: 0;}
     border-top: 1px solid #0881A3;
 }
 
-h3 {border-bottom: 1px solid;}
+section h1 {color: rgb(239, 62, 54);}
+
+#t {
+    list-style-type: circle;
+    /*padding: 0;*/
+    border-bottom: 1px dotted;
+    font-variant:small-caps;
+}
+
+.italapok {
+    background-image: url('circuit.jpg');
+    background-size: 100%;
+}
+
+.os {
+    background-image: url('os-720223_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.network {
+    background-image: url('globe-8704013_1280.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.rendszuzem {
+    background-image: url('technology-8676538_640.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.ai {
+    background-image: url('hand-4-7014643_1920.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.office {
+    background-image: url('laptop-5714421_640.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+h3 {
+    border-bottom: 1px solid;
+}
+
+section {padding: 0 1rem;}
 
 section a:hover {text-decoration: underline;}
 
@@ -111,6 +158,11 @@ footer a:hover {
     transition: .5s;
 }
 
+#zaro {
+    color: rgb(239, 62, 54);
+    font-weight: bold;
+}
+
 @media(min-width:1081px){
     body {
         width: 80%;
@@ -119,9 +171,10 @@ footer a:hover {
     header {
         display: grid;
         grid-template-columns: 20% 80%;
-        border-bottom: 1px solid;
     }
-    header a {padding: 2rem 0;}
+    header a {
+        padding: 2rem 0;
+    }
     header img {
         display: block;
         border: 1px solid black;
@@ -141,4 +194,8 @@ footer a:hover {
     }
 
     p, section li {text-align: justify;}
+
+    /* aloldalakon */
+    .R {float: right; width: 50%;}
+    .L {float: left; width: 50%;}
 }
