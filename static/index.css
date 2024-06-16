@@ -28,8 +28,6 @@
 .bal img, .jobb img {display: none;}
 
 button {
-    background-color: orange;
-    border: 1px solid orange;
     padding: 0;
     display: block;
     margin-left: 2rem;
@@ -37,19 +35,17 @@ button {
 
 button a {
     display: block;
-    color: white;
+    color: orange;
+    background-color: white;
+    border: 1px solid orange;
     padding: .5rem;
 }
 
-button:hover {
-    background-color: white;
-    border: 1px solid orange;
-}
-
 button a:hover {
+    color: white;
+    background-color: orange;
+    border: 1px solid orange;
     text-decoration: none;
-    color: orange;
-    
 }
 
 @media(min-width:1081px){
