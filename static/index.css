@@ -10,6 +10,12 @@
     text-decoration: none;
 }
 
+#projcim {
+    margin: 0;
+    font-size: 3rem;
+    color: rgb(239, 62, 54);
+}
+
 .baljobb {display: block;}
 .baljobb aside {display: none;}
 #szurke {color: grey;}
@@ -64,6 +70,10 @@ button a:hover {
 
     main {
         display: block;
+    }
+
+    #projcim {
+        padding: 3rem 0 3rem 20%;
     }
 
     .baljobb {
