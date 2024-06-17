@@ -10,11 +10,13 @@
     text-decoration: none;
 }
 
-#projcim {
+main h1 {
     margin: 0;
     font-size: 3rem;
     color: rgb(239, 62, 54);
 }
+
+main h2 {color: rgb(239, 62, 54);}
 
 .baljobb {display: block;}
 .baljobb aside {display: none;}
@@ -68,7 +70,7 @@ button a:hover {
         display: block;
     }
 
-    #projcim {
+    h1 {
         padding: 3rem 0 3rem 20%;
     }
 

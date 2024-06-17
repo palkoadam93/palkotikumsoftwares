@@ -22,6 +22,8 @@ article h3, article p {
 
 .begin img {display: none;}
 
+.begin h2 {color:#0881A3;}
+
 .begin button {
     margin-left: auto;
 }
