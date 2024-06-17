@@ -16,7 +16,10 @@ main h1 {
     color: rgb(239, 62, 54);
 }
 
-main h2 {color: rgb(239, 62, 54);}
+main h2 {
+    color: rgb(239, 62, 54);
+    border-bottom: 1px solid;
+}
 
 .baljobb {display: block;}
 .baljobb aside {display: none;}
@@ -62,7 +65,7 @@ button a:hover {
     }
     .fulszoveg p {
         padding: 1rem 2rem;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, .9);
         margin: 0;
     }
 
@@ -73,6 +76,8 @@ button a:hover {
     h1 {
         padding: 3rem 0 3rem 20%;
     }
+
+    main h2 {border: none;}
 
     .baljobb {
         display: grid;
