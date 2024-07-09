@@ -4,19 +4,19 @@
     padding: 0 1rem;
 }
 
-#bemutat div {background-color: #F5FFFA;}
+/*#bemutat div {background-color: #F5FFFA;}*/
 
 #bemutat a:hover {
     text-decoration: none;
 }
 
-main h1 {
+#index h1 {
     margin: 0;
     font-size: 3rem;
     color: rgb(239, 62, 54);
 }
 
-main h2 {
+#index h2 {
     color: rgb(239, 62, 54);
     border-bottom: 1px solid;
 }
@@ -30,7 +30,7 @@ main h2 {
 #piros {color:crimson;}
 #citrom {color:yellowgreen;}
 
-.bal img, .jobb img {display: none;}
+#elvalaszto, .bal img, .jobb img {display: none;}
 
 button {
     padding: 0;
@@ -69,15 +69,59 @@ button a:hover {
         margin: 0;
     }
 
-    main {
+    #elvalaszto {
         display: block;
+        border: 1px solid black;
+        border-radius: 50%;
+        max-width: 10%;
+        height: auto;
+        
+        box-shadow: 5px 5px lightblue;
+        margin: 10rem auto;
+    }
+
+    #index {
+        display: block;
+    }
+
+    .begin {
+        padding-top: 3rem;
+    }
+
+    .alcim {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 30rem;
+    }
+    .alcim h1, p {
+        margin: 0;
+        background-color: rgba(255, 255, 255, .8);
+        padding: 1rem 2rem;
+    }
+    #alcimprog {
+        background-image: url("Picture8_Python.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    #webprog {
+        background-image: url("blogging-7308532_1280.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    #projekt {
+        background-image: url("office-7799893_640.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
     }
 
     h1 {
         padding: 3rem 0 3rem 20%;
     }
 
-    main h2 {border: none;}
+    #index h2 {border: none;}
 
     .baljobb {
         display: grid;
