@@ -18,7 +18,13 @@ header {
 }
 
 header img {
-    display: none;
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 20%;
+    height: auto;
+    margin: 1rem auto 0 auto;
+    box-shadow: 5px 5px lightblue;
 }
 
 header h1 {
@@ -28,6 +34,35 @@ header h1 {
     margin: 0;
     text-align: center;
 }
+
+/* =================================== FŐMENÜ ================================== */
+
+.menu {
+    /*background-color: cornflowerblue;*/
+    background-color: #0881A3;
+    overflow: hidden;
+}
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: white;
+    /*color: cornflowerblue;*/
+    color: #0881A3;
+}
+
+#akt {
+    background-color: white;
+    /*color: cornflowerblue;*/
+    color: #0881A3;
+}
+
+/* =================================== FŐMENÜ ================================== */
 
 main {
     /*background-color: rgba(26,26,29,.8);*/
@@ -186,9 +221,15 @@ footer a:hover {
         margin: auto;
         box-shadow: 5px 5px lightblue;
     }
+    header h1 {
+        text-align: center;
+    }
 
-    .fulszoveg div {
+    .menu {
         padding-left: 10%;
+    }
+    .menu a {
+        border-left: 1px solid white;
     }
 
     main {

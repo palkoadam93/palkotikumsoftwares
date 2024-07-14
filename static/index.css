@@ -53,10 +53,19 @@ button a:hover {
     text-decoration: none;
 }
 
+#elvalaszto {
+    width: 30%;
+    display: block;
+    margin: 5rem auto;
+    border-radius: 50%;
+}
+
 @media(min-width:1081px){
     .fulszoveg {
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 0 10%;
+        /*ha ezt a fulszoveg div elemnek adjuk, akkor a fulszoveg felének veszi a 10%-át!!!*/
 
         background-image: url("programming-languages_label.png");
         background-repeat: no-repeat;
@@ -64,7 +73,7 @@ button a:hover {
         background-size:cover;
     }
     .fulszoveg p {
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         background-color: rgba(255, 255, 255, .9);
         margin: 0;
     }
