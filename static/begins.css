@@ -72,12 +72,14 @@ article h3, article p {
 }
 
 @media(min-width:1081px){
+    h2 {padding-left: 10%;}
     .begin {
         display: grid;
-        grid-template-columns: 20% 40% 40%;
+        grid-template-columns: 33% 33% 33%;
     }
     .begin img {display: inline; width: 100%;}
     /*.alap{margin-right: 1rem;}*/
+
     article {
         border-left: 1px solid;
         margin-bottom: 1rem;
