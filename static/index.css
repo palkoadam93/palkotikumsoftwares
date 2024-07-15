@@ -30,7 +30,12 @@
 #piros {color:crimson;}
 #citrom {color:yellowgreen;}
 
-#elvalaszto, .bal img, .jobb img {display: none;}
+#elvalaszto {
+    max-width: 30%;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 50%;
+}
 
 button {
     padding: 0;
@@ -54,9 +59,9 @@ button a:hover {
 }
 
 #elvalaszto {
-    width: 30%;
+    max-width: 15%;
     display: block;
-    margin: 5rem auto;
+    margin: 3rem auto;
     border-radius: 50%;
 }
 
@@ -79,14 +84,7 @@ button a:hover {
     }
 
     #elvalaszto {
-        display: block;
-        border: 1px solid black;
-        border-radius: 50%;
-        max-width: 10%;
-        height: auto;
-        
-        box-shadow: 5px 5px lightblue;
-        margin: 5rem auto;
+        max-width: 5%;
     }
 
     #index {
