@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+
+    <title>Blogmotor</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1 class="ai">Blogmotor</h1>
+    </header>
+
+    <main>
+      <aside>
+        <p><a href="javascript:history.back()">Vissza</a></p>
+      </aside>
+      <section>
+        <h1>Blogmotor projekt</h1>
+
+        <p>Egy blogmotor megírásának projektje számos lépést igényel, amelyek között szerepel a tervezés, a fejlesztés, a tesztelés és a telepítés. Az alábbiakban részletesen bemutatom a projekt főbb szakaszait:</p>
+
+        <h2>Tervezés</h2>
+
+        <h3>Célkitűzések és követelmények meghatározása</h3>
+        <p>Funkcionális követelmények: Felhasználói regisztráció és bejelentkezés, blogbejegyzések létrehozása, szerkesztése, törlése, megjelenítése, hozzászólások kezelése, kategóriák és címkék kezelése, keresési funkció, adminisztrációs felület.</p>
+        <p>Nem funkcionális követelmények: Biztonság, teljesítmény, skálázhatóság, használhatóság.</p>
+
+        <h3>Technológiai stack kiválasztása</h3>
+        <p>Backend: Python (Django, Flask), Ruby (Rails), Node.js (Express), PHP (Laravel)</p>
+        <p>Frontend: HTML, CSS, JavaScript, React, Vue.js, Angular</p>
+        <p>Adatbázis: MySQL, PostgreSQL, SQLite, MongoDB</p>
+        <p>Egyéb: Docker a konténerizáláshoz, CI/CD eszközök (pl. Jenkins, GitHub Actions)</p>
+
+        <h3>Adatbázis tervezés</h3>
+        <p>Táblák: Felhasználók, blogbejegyzések, hozzászólások, kategóriák, címkék</p>
+        <p>Kapcsolatok: Egy-a-többhöz (pl. felhasználók és blogbejegyzések), sok-a-sokhoz (pl. blogbejegyzések és címkék)</p>
+
+        <h2>Fejlesztés</h2>
+
+        <h3>Környezet beállítása</h3>
+        <p>Fejlesztői környezetek (IDE, kódszerkesztők)</p>
+        <p>Verziókezelő rendszer (Git)</p>
+        <p>Virtuális környezetek (pl. Python venv)</p>
+
+        <h3>Alapvető funkciók megvalósítása</h3>
+        <p>Felhasználói autentikáció: Regisztráció, bejelentkezés, jelszó visszaállítás</p>
+        <p>Blogbejegyzések kezelése: CRUD műveletek (Create, Read, Update, Delete)</p>
+        <p>Hozzászólások kezelése: Bejegyzéshez kapcsolódó hozzászólások hozzáadása, szerkesztése, törlése</p>
+        <p>Kategóriák és címkék: Hozzáadás, szerkesztés, törlés, hozzárendelés blogbejegyzésekhez</p>
+
+        <h3>Adminisztrációs felület kialakítása</h3>
+        <p>Felhasználók kezelése</p>
+        <p>Bejegyzések, hozzászólások moderálása</p>
+        <p>Kategóriák és címkék kezelése</p>
+
+        <h3>Frontend fejlesztés</h3>
+        <p>Design: Reszponzív dizájn kialakítása, Bootstrap vagy más CSS keretrendszer használata</p>
+        <p>Interaktivitás: JavaScript/jQuery használata, AJAX hívások</p>
+
+        <h2>Tesztelés</h2>
+
+        <h3>Egységtesztek</h3>
+        <p>Backend logika tesztelése</p>
+        <p>Adatbázis műveletek tesztelése</p>
+
+        <h3>Integrációs tesztek</h3>
+        <p>Backend és frontend összekapcsolása</p>
+        <p>API végpontok tesztelése</p>
+
+        <h3>Felhasználói tesztek</h3>
+        <p>Belső tesztelés (alpha tesztelés)</p>
+        <p>Külső tesztelés (beta tesztelés)</p>
+
+        <h2>Telepítés</h2>
+
+        <h3>Telepítési környezet előkészítése</h3>
+        <p>Szerver beállítása (pl. Linux VPS)</p>
+        <p>Webszerver konfigurálása (pl. Nginx, Apache)</p>
+        <p>Adatbázis telepítése és konfigurálása</p>
+
+        <h3>Alkalmazás telepítése</h3>
+        <p>Kód telepítése a szerverre</p>
+        <p>Adatbázis migrációk futtatása</p>
+        <p>Alkalmazás indítása és monitorozása</p>
+
+        <h2>Karbantartás és bővítés</h2>
+
+        <h3>Hibajavítások és frissítések</h3>
+        <p>Biztonsági frissítések alkalmazása</p>
+        <p>Új funkciók hozzáadása a felhasználói visszajelzések alapján</p>
+
+        <h3>Teljesítmény optimalizálás</h3>
+        <p>Caching megoldások bevezetése</p>
+        <p>Adatbázis optimalizálás</p>
+
+        <h3>Dokumentáció és támogatás</h3>
+        <p>Felhasználói és fejlesztői dokumentáció készítése</p>
+        <p>Támogatási csatornák kialakítása (pl. fórum, e-mail támogatás)</p>
+
+        <h2>Vége</h2>
+        <p>Ez a folyamat biztosítja, hogy a blogmotor projekt megfelelően legyen megtervezve, fejlesztve és telepítve, miközben figyelembe veszi a minőségi követelményeket és a felhasználói igényeket.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+  </body>
+</html>
