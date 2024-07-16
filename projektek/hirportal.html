@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+
+    <title>Hírportál</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1 class="ai">Hírportál</h1>
+    </header>
+
+    <main>
+      <aside>
+        <p><a href="javascript:history.back()">Vissza</a></p>
+      </aside>
+      <section>
+        <h1>Hírportál projekt</h1>
+        
+        <h1>Hírportál Fejlesztése</h1>
+    
+    <h2>1. Főoldal</h2>
+    
+    <h3>1.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Hírek kategóriák szerint csoportosítva (pl. főcímek, sport, gazdaság, technológia)</p>
+    <p><strong>Funkciók:</strong> Kiemelt hírek, legújabb hírek, legolvasottabb hírek</p>
+    
+    <h3>1.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Adatbázisban a hírek tárolása</p>
+    <p>- API végpontok létrehozása a hírek lekérdezésére</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- HTML/CSS a megjelenítéshez</p>
+    <p>- JavaScript/jQuery az interaktivitáshoz (pl. lapozás, hírek frissítése AJAX-szal)</p>
+    
+    <h2>2. Cikkoldal</h2>
+    
+    <h3>2.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Cikk szövege, képek, videók, kapcsolódó hírek, szerző információk</p>
+    <p><strong>Funkciók:</strong> Hozzászólások, megosztási lehetőségek, cikk nyomtatása</p>
+    
+    <h3>2.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Cikk adatok tárolása és lekérdezése</p>
+    <p>- Hozzászólások kezelése (CRUD műveletek)</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Reszponzív dizájn kialakítása</p>
+    <p>- Hozzászólások megjelenítése és kezelése</p>
+    
+    <h2>3. Kategória oldalak</h2>
+    
+    <h3>3.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Kategórián belüli hírek listázása, kategória leírása</p>
+    <p><strong>Funkciók:</strong> Kategóriák közötti navigáció, szűrők (pl. dátum, népszerűség)</p>
+    
+    <h3>3.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Kategória adatok kezelése</p>
+    <p>- Hírek kategória szerinti lekérdezése</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Kategória oldalak dizájnja</p>
+    <p>- Szűrők és rendezési lehetőségek</p>
+    
+    <h2>4. Keresési funkció</h2>
+    
+    <h3>4.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Keresőmező, találati lista</p>
+    <p><strong>Funkciók:</strong> Teljes szöveges keresés, szűrés és rendezés</p>
+    
+    <h3>4.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Keresési algoritmusok implementálása (pl. Elasticsearch)</p>
+    <p>- API végpont a keresési találatokhoz</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Keresőmező és találati lista dizájnja</p>
+    <p>- Keresési eredmények megjelenítése</p>
+    
+    <h2>5. Felhasználói profilok</h2>
+    
+    <h3>5.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Profil adatlap, kedvenc cikkek, hozzászólások listája</p>
+    <p><strong>Funkciók:</strong> Profil szerkesztése, jelszó megváltoztatása</p>
+    
+    <h3>5.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Felhasználói adatok kezelése</p>
+    <p>- Autentikációs és autorizációs mechanizmusok</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Profil oldalak dizájnja</p>
+    <p>- Felhasználói interakciók kezelése</p>
+    
+    <h2>6. Adminisztrációs felület</h2>
+    
+    <h3>6.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Hírek, kategóriák, felhasználók, hozzászólások kezelése</p>
+    <p><strong>Funkciók:</strong> Hírek publikálása, szerkesztése, törlése, statisztikák megtekintése</p>
+    
+    <h3>6.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Adminisztrációs funkciók implementálása</p>
+    <p>- Jogosultsági szintek kezelése</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Adminisztrációs felület dizájnja</p>
+    <p>- CRUD műveletek megvalósítása</p>
+    
+    <h2>7. Értesítések és hírlevelek</h2>
+    
+    <h3>7.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Értesítési beállítások, hírlevél feliratkozás</p>
+    <p><strong>Funkciók:</strong> Push értesítések, email értesítések, hírlevelek</p>
+    
+    <h3>7.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Értesítési rendszer fejlesztése (pl. OneSignal)</p>
+    <p>- Email küldési szolgáltatások integrálása (pl. SendGrid)</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Feliratkozási űrlapok</p>
+    <p>- Értesítési beállítások kezelése</p>
+    
+    <h2>8. Analitika és jelentések</h2>
+    
+    <h3>8.1 Tervezés</h3>
+    <p><strong>Elrendezés:</strong> Látogatottsági statisztikák, felhasználói aktivitás jelentések</p>
+    <p><strong>Funkciók:</strong> Google Analytics, belső analitika eszközök</p>
+    
+    <h3>8.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Analitika adatok gyűjtése és tárolása</p>
+    <p>- Jelentések generálása</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Statisztikai adatok vizualizálása</p>
+    
+    <h2>9. Biztonság és adatvédelem</h2>
+    
+        <h3>9.1 Tervezés</h3>
+        <p><strong>Elrendezés:</strong> Adatvédelmi irányelvek, felhasználói adatok védelme</p>
+        <p><strong>Funkciók:</strong> SSL, GDPR kompatibilitás, adatbiztonsági intézkedések</p>
+    
+        <h3>9.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- SSL implementálása</p>
+        <p>- Adatvédelmi funkciók beépítése</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Adatvédelmi értesítések és beállítások</p>
+
+        <h2>Általános Fejlesztési Lépések</h2>
+        
+        <p>1. <strong>Követelmények összegyűjtése és elemzése</strong></p>
+        <p>Részletes specifikáció készítése</p>
+    
+        <p>2. <strong>Tervezés</strong></p>
+        <p>UI/UX tervezés (wireframe-ek, mockup-ok)</p>
+        <p>Adatbázis tervezés (ER diagramok)</p>
+    
+        <p>3. <strong>Fejlesztés</strong></p>
+        <p>Backend és frontend fejlesztése párhuzamosan</p>
+        <p>Verziókezelés (Git)</p>
+    
+        <p>4. <strong>Tesztelés</strong></p>
+        <p>Egységtesztek, integrációs tesztek, felhasználói tesztek</p>
+    
+        <p>5. <strong>Telepítés és üzemeltetés</strong></p>
+        <p>Szerver konfigurálása, alkalmazás telepítése</p>
+    
+        <p>6. <strong>Karbantartás és frissítések</strong></p>
+        <p>Hibajavítások, új funkciók bevezetése, teljesítmény optimalizálás</p>
+
+        <p id="zaro">Egy hírportál fejlesztése összetett feladat, amely alapos tervezést, következetes fejlesztést és folyamatos karbantartást igényel.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+  </body>
+</html>
