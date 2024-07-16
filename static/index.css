@@ -135,48 +135,4 @@ button a:hover {
     }
 
     #index h2 {border: none;}
-
-    .baljobb {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        padding: 0;
-        margin: 2rem 0;
-    }
-    .baljobb aside {
-        display: block;
-        font-weight: bold;
-    }
-
-    .bal h1, .jobb h1 {margin-left:2rem;}
-    .bal {
-        display: grid;
-        grid-template-columns: 40% 60%;
-    }
-
-    .jobb {
-        display: grid;
-        grid-template-columns: 60% 40%;
-    }
-
-    .jobb img {
-        display: inline;
-        width:100%;
-        border-radius: 50%;
-    }
-    .jobb p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-left: 1px solid;
-    }
-    
-    .bal img {
-        display: inline;
-        width:100%;
-        border-radius: 50%;
-    }
-    .bal p {
-        padding: 2rem;
-        border-top: 1px solid;
-        border-right: 1px solid;
-    }
 }
