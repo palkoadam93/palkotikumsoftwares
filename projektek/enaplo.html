@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+
+    <title>E-napló</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1 class="ai">E-napló</h1>
+    </header>
+
+    <main>
+      <aside>
+        <p><a href="javascript:history.back()">Vissza</a></p>
+      </aside>
+      <section>
+        <h1>Iskolai Elektronikus Napló Fejlesztése</h1>
+
+        <p><a href="https://github.com/palkoadam93/flaskenaplo" target="_blank">Projekt alapja a GitHubon</a></p>
+
+    <h2>1. Bejelentkezési Oldal</h2>
+    
+    <h3>1.1 Tervezés</h3>
+    <p>A bejelentkezési oldal az iskolai elektronikus napló kezdőpontja, ahol a diákok, szülők és tanárok bejelentkezhetnek a saját fiókjukba. Fontos, hogy biztosítsuk a felhasználók számára a biztonságos bejelentkezést, és megfelelő hibaüzeneteket jelenítsünk meg hibás belépés esetén.</p>
+
+    <h3>1.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Felhasználói adatok és jelszavak kezelése adatbázisban.</p>
+    <p>- Felhasználó azonosítása és jogosultságok ellenőrzése.</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Bejelentkezési űrlap megjelenítése, HTML/CSS segítségével.</p>
+    <p>- JavaScript validáció a felhasználói inputok ellenőrzésére.</p>
+
+    <h2>2. Diák és Tanár Felületek</h2>
+    
+    <h3>2.1 Tervezés</h3>
+    <p>A diák és tanár felületek személyre szabott információkat kínálnak, például órarendet, házi feladatokat, jegyeket és értesítéseket. Fontos, hogy a felület intuitív legyen és könnyen navigálható, hogy a felhasználók gyorsan megtalálják a számukra releváns információkat.</p>
+
+    <h3>2.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Diákok és tanárok számára személyre szabott adatok lekérdezése és megjelenítése.</p>
+    <p>- Kommunikációs csatornák kezelése, például üzenetek és értesítések.</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Diák és tanár felületek kialakítása, HTML/CSS használatával.</p>
+    <p>- Interaktív elemek, például dinamikus órarend és feladatok megjelenítése JavaScript segítségével.</p>
+
+    <h2>3. Szülői Felület</h2>
+    
+    <h3>3.1 Tervezés</h3>
+    <p>A szülői felület lehetővé teszi a szülők számára, hogy követhessék gyermekük akadémiai fejlődését, értesüljenek a házi feladatokról, osztályfőnöki értesítésekről és tanulmányi eredményekről. Fontos, hogy a szülők gyorsan és egyszerűen megkapják a szükséges információkat.</p>
+
+    <h3>3.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Szülői fiókhoz kapcsolódó gyermek adatok kezelése és lekérdezése.</p>
+    <p>- Osztályfőnöki értesítések és tanulmányi eredmények kezelése.</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Szülői felület kialakítása, HTML/CSS használatával.</p>
+    <p>- Gyermek specifikus adatok megjelenítése és kezelése JavaScript segítségével.</p>
+
+    <h2>4. Adminisztrációs Felület</h2>
+    
+    <h3>4.1 Tervezés</h3>
+    <p>Az adminisztrációs felület lehetővé teszi az iskola adminisztrátorai számára, hogy kezeljék a diákok, tanárok és tanulmányi adatokat. Funkciói közé tartozik új fiókok létrehozása, adatok szerkesztése, stb. Fontos, hogy az adminisztrátorok hatékonyan és biztonságosan tudják végezni a feladataikat.</p>
+
+    <h3>4.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Felhasználói és tanulmányi adatok kezelése az adatbázisban.</p>
+    <p>- CRUD műveletek implementálása (Create, Read, Update, Delete).</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Adminisztrációs felület kialakítása, HTML/CSS használatával.</p>
+    <p>- Interaktív adminisztrációs funkciók megvalósítása JavaScript és AJAX segítségével.</p>
+
+    <h2>5. Kommunikációs Eszközök</h2>
+    
+    <h3>5.1 Tervezés</h3>
+    <p>A kommunikációs eszközök lehetőséget biztosítanak a diákok, tanárok és szülők közötti kommunikációra. Ez lehetőséget ad üzenetküldésre, értesítések küldésére és esetlegesen videókonferenciák lebonyolítására is.</p>
+
+    <h3>5.2 Fejlesztés</h3>
+    <p><strong>Backend:</strong></p>
+    <p>- Kommunikációs csatornák kezelése, üzenetküldés, értesítések küldése.</p>
+    <p>- Események és esetlegesen videókonferenciák kezelése.</p>
+    <p><strong>Frontend:</strong></p>
+    <p>- Kommunikációs eszközök megjelenítése és kezelése, HTML/CSS használatával.</p>
+    <p>- Interaktív üzenetküldés és értesítés kezelése JavaScript segítségével.</p>
+
+    <h2>Általános Fejlesztési Lépések</h2>
+    
+    <p>1. <strong>Követelmények összegyűjtése és elemzése</strong></p>
+    <p>A projekt megkezdése előtt fontos a követelmények részletes összegyűjtése és elemzése. Ez magában foglalja az iskolai igények felmérését és a felhasználói visszajelzések figyelembevételét.</p>
+    
+    <p>2. <strong>Tervezés</strong></p>
+    <p>A tervezési fázisban kerül sor az UI/UX tervezésre, beleértve a felhasználói felületek tervezését és az adatbázis struktúrájának kidolgozását.</p>
+    
+    <p>3. <strong>Fejlesztés</strong></p>
+    <p>A fejlesztési fázis során implementáljuk a tervezett funkciókat, és biztosítjuk a felhasználói interakciókat.</p>
+    
+    <p>4. <strong>Tesztelés</strong></p>
+    <p>A tesztelési fázisban különböző teszteket végzünk, hogy biztosítsuk az alkalmazás működésének hibátlan működését és a biztonságot.</p>
+    
+    <p>5. <strong>Telepítés és üzemeltetés</strong></p>
+    <p>A telepítési fázisban konfiguráljuk a szükséges szervereket és telepítjük az alkalmazást, majd folyamatosan figyeljük az üzemeltetést.</p>
+    
+    <p>6. <strong>Karbantartás és frissítések</strong></p>
+    <p>A karbantartási fázisban hibajavításokat végzünk, és új funkciókat vezetünk be az iskolai elektronikus naplóba, hogy az mindig naprakész és hatékony maradjon.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+  </body>
+</html>

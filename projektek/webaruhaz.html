@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/Palkotikumicon.png">
+
+    <title>Webáruház</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
+      <h1 class="ai">Webáruház</h1>
+    </header>
+
+    <main>
+      <aside>
+        <p><a href="javascript:history.back()">Vissza</a></p>
+      </aside>
+      <section>
+        <h1>Webáruház Fejlesztése</h1>
+
+        <h2>1. Főoldal</h2>
+        
+        <h3>1.1 Tervezés</h3>
+        <p>A főoldal a webáruház bejárata, ezért vonzó és felhasználóbarát dizájnt kell kapnia. A főoldalon helyet kell kapniuk az aktuális akcióknak, népszerű termékeknek, és egy jól látható keresőmezőnek. Fontos, hogy a navigáció egyszerű és intuitív legyen, lehetővé téve a felhasználóknak, hogy gyorsan megtalálják a keresett termékeket.</p>
+    
+        <h3>1.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Adatbázisban tárolt termékek és akciók lekérdezése.</p>
+        <p>- API végpontok létrehozása a termékek és akciók lekérdezésére.</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- HTML/CSS a megjelenítéshez, reszponzív dizájn kialakítása.</p>
+        <p>- JavaScript az interaktivitáshoz, például lapozás és termékek betöltése AJAX-szal.</p>
+    
+        <h2>2. Termékoldal</h2>
+        
+        <h3>2.1 Tervezés</h3>
+        <p>A termékoldal részletes információkat nyújt az egyes termékekről, beleértve a leírást, árat, elérhetőséget, termék képeket és vásárlói véleményeket. Emellett fontos a „Kosárba” gomb, amely lehetővé teszi a termék egyszerű hozzáadását a kosárhoz.</p>
+    
+        <h3>2.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Termékadatok tárolása és lekérdezése az adatbázisból.</p>
+        <p>- Vásárlói vélemények kezelése (hozzáadás, szerkesztés, törlés).</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Reszponzív dizájn kialakítása a termék részleteinek megjelenítéséhez.</p>
+        <p>- Interaktív elemek, mint például a „Kosárba” gomb és a termékvélemények megjelenítése és kezelése.</p>
+    
+        <h2>3. Kosár</h2>
+        
+        <h3>3.1 Tervezés</h3>
+        <p>A kosár oldalnak áttekinthetően kell megjelenítenie a felhasználó által kiválasztott termékeket, azok mennyiségét és összárát. Lehetőséget kell biztosítani a termékek mennyiségének módosítására, valamint termékek eltávolítására. Az oldalnak tartalmaznia kell egy gombot, amely a fizetési folyamatot indítja el.</p>
+    
+        <h3>3.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Kosár adatainak kezelése (termékek hozzáadása, eltávolítása, mennyiség módosítása).</p>
+        <p>- API végpontok a kosár műveletekhez.</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Kosár oldal megjelenítése HTML/CSS segítségével.</p>
+        <p>- JavaScript az interaktivitás érdekében, például AJAX hívások a kosár műveletekhez.</p>
+    
+        <h2>4. Fizetési folyamat</h2>
+        
+        <h3>4.1 Tervezés</h3>
+        <p>A fizetési folyamat több lépésből áll, mint például a szállítási adatok megadása, fizetési mód kiválasztása, rendelés áttekintése és megerősítése. Fontos, hogy a folyamat egyszerű és zökkenőmentes legyen, hogy minimalizálja a vásárlók lemorzsolódását.</p>
+    
+        <h3>4.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Szállítási és fizetési adatok kezelése.</p>
+        <p>- Rendelés adatainak tárolása és feldolgozása.</p>
+        <p>- Integráció a fizetési szolgáltatókkal (pl. PayPal, Stripe).</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Lépésről lépésre haladó fizetési folyamat megjelenítése.</p>
+        <p>- Űrlapok validálása és kezelése JavaScript segítségével.</p>
+    
+        <h2>5. Felhasználói profil</h2>
+        
+        <h3>5.1 Tervezés</h3>
+        <p>A felhasználói profil oldalon a vásárlók megtekinthetik és szerkeszthetik személyes adataikat, megtekinthetik korábbi rendeléseiket, és kezelhetik a jelszavukat. Fontos, hogy a felület felhasználóbarát és biztonságos legyen.</p>
+    
+        <h3>5.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Felhasználói adatok tárolása és kezelése.</p>
+        <p>- Rendelési adatok lekérdezése és megjelenítése.</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Profil oldalak megjelenítése HTML/CSS segítségével.</p>
+        <p>- Interaktív elemek, például a profil adatok szerkesztése JavaScript segítségével.</p>
+    
+        <h2>6. Adminisztrációs felület</h2>
+        
+        <h3>6.1 Tervezés</h3>
+        <p>Az adminisztrációs felület lehetővé teszi az adminisztrátorok számára a termékek, rendelésék, felhasználók és egyéb adatok kezelését. Fontos, hogy az adminisztrációs felület könnyen használható és biztonságos legyen, hogy az adminisztrátorok hatékonyan végezhessék munkájukat.</p>
+    
+        <h3>6.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Termékek, rendelések és felhasználók kezelése az adatbázisban.</p>
+        <p>- Adminisztrációs funkciók implementálása.</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Adminisztrációs felület kialakítása HTML/CSS segítségével.</p>
+        <p>- CRUD műveletek megvalósítása JavaScript és AJAX segítségével.</p>
+    
+        <h2>7. Értesítések és hírlevelek</h2>
+        
+        <h3>7.1 Tervezés</h3>
+        <p>Az értesítési rendszer és hírlevelek fontosak a vásárlók tájékoztatásában és a vásárlói hűség növelésében. Az értesítések lehetnek email értesítések, push értesítések vagy SMS értesítések, amelyeket a felhasználók beállíthatnak és testre szabhatnak.</p>
+    
+        <h3>7.2 Fejlesztés</h3>
+        <p><strong>Backend:</strong></p>
+        <p>- Értesítési és hírlevél rendszerek fejlesztése.</p>
+        <p>- Integráció külső szolgáltatásokkal (pl. SendGrid, OneSignal).</p>
+        <p><strong>Frontend:</strong></p>
+        <p>- Feliratkozási űrlapok és beállítási oldalak megjelenítése.</p>
+        <p>- Értesítési beállítások kezelése JavaScript segítségével.</p>
+    
+        <h2>Általános Fejlesztési Lépések</h2>
+        
+        <p>1. <strong>Követelmények összegyűjtése és elemzése</strong></p>
+        <p>A projekt megkezdése előtt fontos a követelmények részletes összegyűjtése és elemzése. Ez magában foglalja a piackutatást, a versenytársak elemzését és a célközönség igényeinek felmérését.</p>
+        
+        <p>2. <strong>Tervezés</strong></p>
+        <p>A tervezési fázisban kerül sor az UI/UX tervezésre, beleértve a wireframe-ek és mockup-ok készítését. Az adatbázis tervezéséhez ER diagramok készülnek, amelyek segítenek az adatok struktúrájának és kapcsolatainak megértésében.</p>
+        
+        <p>3. <strong>Fejlesztés</strong></p>
+        <p>A fejlesztési fázisban párhuzamosan történik a backend és frontend fejlesztése. A verziókezeléshez Git-et használunk, ami lehetővé teszi a kódváltoztatások nyomon követését és kezelését.</p>
+        
+        <p>4. <strong>Tesztelés</strong></p>
+        <p>A tesztelési fázisban különböző teszteket végzünk, mint például egységtesztek, integrációs tesztek és felhasználói tesztek, hogy biztosítsuk az alkalmazás működésének hibátlanságát.</p>
+        
+        <p>5. <strong>Telepítés és üzemeltetés</strong></p>
+        <p>A telepítési fázisban a szerver konfigurálása és az alkalmazás telepítése történik. Az üzemeltetés során folyamatosan figyeljük az alkalmazás működését és teljesítményét.</p>
+        
+        <p>6. <strong>Karbantartás és frissítések</strong></p>
+        <p>A karbantartási fázisban hibajavításokat, új funkciók bevezetését és teljesítmény optimalizálást végzünk, hogy az alkalmazás mindig naprakész és hatékony maradjon.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
+      <img src="../static/cc.logo.large.png" alt="cc">
+    </footer>
+  </body>
+</html>
