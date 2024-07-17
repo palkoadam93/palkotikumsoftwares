@@ -121,7 +121,7 @@ button a:hover {
         background-size:cover;
     }
     #ai {
-        background-image: url("ai-generated-8602502_1920-169.jpg");
+        background-image: url("machinelearning.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
