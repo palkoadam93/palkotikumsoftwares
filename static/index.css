@@ -73,6 +73,7 @@ button a:hover {
         /*ha ezt a fulszoveg div elemnek adjuk, akkor a fulszoveg felének veszi a 10%-át!!!*/
 
         background-image: url("programming-languages_label.png");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
@@ -107,24 +108,28 @@ button a:hover {
     }
     #alcimprog {
         background-image: url("Picture8_Python.png");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #webprog {
         background-image: url("blogging-7308532_1280.png");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #ai {
         background-image: url("ai-generated-8602502_1920-169.jpg");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #projekt {
         background-image: url("projekt.jpg");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
