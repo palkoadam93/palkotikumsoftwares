@@ -1,20 +1,17 @@
 body {
     font-family: "Source Sans 3", sans-serif;
+    /*font-family: "Roboto Condensed", sans-serif;*/
+
     margin: 0;
     color: #0881A3;
     background-color: #F5FFFA;
 }
 
 header {
-    color: rgb(239, 62, 54);
+    /*color: rgb(239, 62, 54);*/
+    color: orangered;
     /*padding: 0 2rem;*/
-    border-bottom: 1px solid;
-}
-
-#fofejlec {
-    color: rgb(239, 62, 54);
-    border-bottom: 1px solid;
-    /*color:#0881A3;*/
+    /*border-bottom: 1px solid;*/
 }
 
 header img {
@@ -67,16 +64,18 @@ header h1 {
 main {
     /*background-color: rgba(26,26,29,.8);*/
     /*color: white;*/
-    padding: 1em;
+    padding: 1rem;
 }
 
 /*aside {padding-right: 1rem;}*/
 aside h1, aside p {padding-left: .5rem;}
 
-aside a, section a {
+aside a, section a, article a {
     text-decoration: none;
     color: orange;
 }
+
+/* =================================== ALMENÜ ================================== */
 
 nav ul {
     list-style-type: none;
@@ -101,7 +100,9 @@ hr {margin: 0;}
     color: white;
 }
 
-section h1 {color: rgb(239, 62, 54);}
+/* =================================== ALMENÜ ================================== */
+
+section h1 {color: orangered;}
 
 #t {
     list-style-type: circle;
@@ -110,12 +111,10 @@ section h1 {color: rgb(239, 62, 54);}
     font-variant:small-caps;
 }
 
-h3 {border-bottom: 1px solid;}
-.alap h3 {border-bottom: none;}
-
-section {padding: 0 1rem;}
-
 section a:hover {text-decoration: underline;}
+
+h3 {border-bottom: 1px solid;}
+section h3, article h3 {border-bottom: none;}
 
 iframe {
     display: block;
@@ -125,7 +124,8 @@ iframe {
 footer {
     border-top: 1px solid #0881A3;
     padding: 1rem;
-    color: rgb(239, 62, 54);
+    /*color: rgb(239, 62, 54);*/
+    color: orangered;
 }
 footer img {
     display: block;
@@ -164,9 +164,9 @@ footer a:hover {
         display: grid;
         grid-template-columns: 20% 80%;
     }
-
-    header a {padding: 2rem 0;}
-
+    header a {
+        padding: 2rem 0;
+    }
     header img {
         display: block;
         border: 1px solid black;
@@ -176,22 +176,24 @@ footer a:hover {
         margin: auto;
         box-shadow: 5px 5px lightblue;
     }
+    header h1 {
+        text-align: center;
+    }
 
-    header h1 {text-align: center;}
-
-    .menu {padding-left: 10%;}
-
-    .menu a {border-left: 1px solid white;}
+    .menu {
+        padding-left: 10%;
+    }
+    .menu a {
+        border-left: 1px solid white;
+    }
 
     main {
         display: grid;
         grid-template-columns: 20% 80%;
-        padding: 0 10%;
+        padding: 0 10%; 
     }
 
-    #bemutat {padding: 0;}
-
-    section div {padding: 0 10%;}
+    section {padding: 0 2rem;} /*ezt a menüs aloldalak tartalom-szekciója kedvéért*/
 
     p, section li {text-align: justify;}
 }
