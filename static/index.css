@@ -73,6 +73,13 @@ button a:hover {
         background-position: center;
         background-size:cover;
     }
+    #swfejl {
+        background-image: url("ai-generated-8775235_1280.png");
+        background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
     #webprog {
         background-image: url("blogging-7308532_1280.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
