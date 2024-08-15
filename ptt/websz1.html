@@ -7,6 +7,7 @@
 
     <title>Softwares</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,31 +20,131 @@
     </header>
         
     <main>
-      <aside><a href="javascript:history.back()">Vissza</a></aside>
+      <aside>
+        <p><a href="javascript:history.back()">Vissza</a></p>
+      </aside>
       <section>
         <h3>Webszerkesztési alapok</h3>
-          <p>A témakör célja, hogy a tanuló képessé váljon egyszerűbb weboldalak létrehozására és szerkesztésére online és helyi telepítésű fejlesztőeszközökkel. A témakör elsajátítását követően a tanuló:</p>
-          <ol>
-            <li>Ismeri az online fejlesztői környezetek (pl. CodePen, JSBin, Plunker) szolgáltatásait,</li>
-            <li>és legalább egy ilyen környezetben képes a weboldalakat létrehozni, módosítani és formázni.</li>
-            <li>Ismeri legalább egy ingyenes HTML-, CSS- és JavaScript kód szerkesztésre szolgáló fejlett editor (pl. VS Code, Atom, Brackets) alapvető szolgáltatásait</li>
-            <li>és képes azok használatára (javasolt editor: VS Code).</li>
-            <li>Képes a választott editorban a hatékony munkát lehetővé tevő bővítmények (pl. Emmet, Prettier, HTML CSS Support) kiválasztására, telepítésére és azok használatára.</li>
-            <li>Képes a választott editorban a hatékony munkát lehetővé tevő bővítmények (pl. Emmet, Prettier, HTML CSS Support) kiválasztására, telepítésére és azok használatára.</li>
-            <li>Ismeri a HTML-oldalak alapvető elemeit, képes új HTML-oldal létrehozására ezeknek a szerepeltetésével (!DOCTYPE, html, head, body, meta).</li>
-            <li>Ismeri a HTML-oldalak alapvető elemeit, képes új HTML-oldal létrehozására ezeknek a szerepeltetésével (!DOCTYPE, html, head, body, meta).</li>
-            <li>Ismeri a HTML5-oldalakat leíró nyelv legfontosabb strukturális elemeit, és képes azok alkalmazásával HTML-oldalak kialakítására (p, title, h1-h6, img, a, link, strong, em, figure, figcaption, div, span).</li>
-            <li>Ismeri a HTML5-oldalakat leíró nyelv legfontosabb strukturális elemeit, és képes azok alkalmazásával HTML-oldalak kialakítására (p, title, h1-h6, img, a, link, strong, em, figure, figcaption, div, span).</li>
-            <li>Ismeri és tudja alkalmazni a HTML5-tagek legfontosabb attribútumait (href, target, src, alt, lang, charset, style).</li>
-            <li>Ismeri és tudja alkalmazni a HTML5-tagek legfontosabb attribútumait (href, target, src, alt, lang, charset, style).</li>
-            <li>Ismeri a HTML-listák típusait és képes ilyen listák készítésére (ul, ol, li).</li>
-            <li>Ismeri a táblázatok szerepét a HTML-lapokon és képes táblázatok kialakítására (table, tr, td, th, caption).</li>
-          </ol>
+        <p>A témakör célja, hogy a tanuló képessé váljon egyszerűbb weboldalak létrehozására és szerkesztésére online és helyi telepítésű fejlesztőeszközökkel. A témakör elsajátítását követően a tanuló:</p>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri az online fejlesztői környezetek (pl. CodePen, JSBin, Plunker) szolgáltatásait,</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">és legalább egy ilyen környezetben képes a weboldalakat létrehozni, módosítani és formázni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri legalább egy ingyenes HTML-, CSS- és JavaScript kód szerkesztésre szolgáló fejlett editor (pl. VS Code, Atom, Brackets) alapvető szolgáltatásait</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">és képes azok használatára (javasolt editor: VS Code).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a választott editorban a hatékony munkát lehetővé tevő bővítmények (pl. Emmet, Prettier, HTML CSS Support) kiválasztására, telepítésére és azok használatára.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes a választott editorban a hatékony munkát lehetővé tevő bővítmények (pl. Emmet, Prettier, HTML CSS Support) kiválasztására, telepítésére és azok használatára.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a HTML-oldalak alapvető elemeit, képes új HTML-oldal létrehozására ezeknek a szerepeltetésével (!DOCTYPE, html, head, body, meta).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a HTML-oldalak alapvető elemeit, képes új HTML-oldal létrehozására ezeknek a szerepeltetésével (!DOCTYPE, html, head, body, meta).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a HTML5-oldalakat leíró nyelv legfontosabb strukturális elemeit, és képes azok alkalmazásával HTML-oldalak kialakítására (p, title, h1-h6, img, a, link, strong, em, figure, figcaption, div, span).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a HTML5-oldalakat leíró nyelv legfontosabb strukturális elemeit, és képes azok alkalmazásával HTML-oldalak kialakítására (p, title, h1-h6, img, a, link, strong, em, figure, figcaption, div, span).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri és tudja alkalmazni a HTML5-tagek legfontosabb attribútumait (href, target, src, alt, lang, charset, style).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri és tudja alkalmazni a HTML5-tagek legfontosabb attribútumait (href, target, src, alt, lang, charset, style).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a HTML-listák típusait és képes ilyen listák készítésére (ul, ol, li).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Ismeri a táblázatok szerepét a HTML-lapokon és képes táblázatok kialakítására (table, tr, td, th, caption).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>
