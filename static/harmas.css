@@ -1,0 +1,109 @@
+#harmas {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 80rem;
+}
+
+#projektintro {
+    background-image: url('../projektmunka/projekt-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#asztali {
+    background-image: url('../projektmunka/apple-606761_1280-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#mobil {
+    background-image: url('../projektmunka/technology-3353701_1280-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#webapp {
+    background-image: url('../projektmunka/template-1599663_640.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#blogmotor {
+    background-image: url('../projektmunka/cms-265127_1280-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#hirportal {
+    background-image: url('../projektmunka/laptop-7978588_1280-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#webaruhaz {
+    background-image: url('../projektmunka/online-6063329_1280-169.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#portal {
+    background-image: url('../projektmunka/blogging-7308532_1280-169.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#kozossegi {
+    background-image: url('../projektmunka/social-media-6721926_640-169.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#enaplo {
+    background-image: url('../projektmunka/calendar-1763587_1280-169.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#mltext {
+    background-image: url('../projektmunka/ai-generated-8602502_1920-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#mlpic {
+    background-image: url('../projektmunka/ai-generated-8602502_1920-169.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#sablon {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#harmas h2, #harmas p {padding: 0 2rem;}
+
+article h2 {
+    padding: 0 .5rem;
+    margin: 0;
+}
+
+#projektintro:hover, #asztali:hover, #mobil:hover, #webapp:hover, #blogmotor:hover, #hirportal:hover, #webaruhaz:hover, #portal:hover, #kozossegi:hover, #enaplo:hover, #mltext:hover, #mlpic:hover {
+    background-image: none;
+    color: #0881A3;
+    transition: .5s;
+}
