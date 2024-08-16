@@ -67,35 +67,35 @@ button a:hover {
         background-size:cover;
     }
     #alcimprog {
-        background-image: url("Picture8_Python.png");
+        background-image: url("../progalapok/Picture8_Python.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #swfejl {
-        background-image: url("ai-generated-8775235_1280.png");
+        background-image: url("../swfejl/ai-generated-8775235_1280.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #webprog {
-        background-image: url("blogging-7308532_1280.png");
+        background-image: url("../projektmunka/blogging-7308532_1280.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #ai {
-        background-image: url("machinelearning.png");
+        background-image: url("../mestint/machinelearning.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
     }
     #projekt {
-        background-image: url("projekt.jpg");
+        background-image: url("../projektmunka/projekt.jpg");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
