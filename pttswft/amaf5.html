@@ -7,6 +7,7 @@
 
     <title>Softwares</title>
     <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="panel.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,36 +18,76 @@
       <a href="../index.html"><img src="../static/Palkotikumlogo2.png" alt="p"></a>
       <h1>Softwares</h1>
     </header>
-        
+
     <main>
-      <aside><a href="../swfintro.html">Vissza</a></aside>
+      <aside>
+        <p><a href="../swfintro.html">Vissza</a></p>
+      </aside>
       <section>
         <h1>Mobil alkalmazások fejlesztése</h1>
-      <p>A témakör célja, hogy a tanuló betekintést nyerjen a mobil alkalmazások fejlesztésének világába. A témakör elvégzése után a tanuló önállóan tud kialakítani fejlesztői környezetet Android alkalmazás fejlesztéséhez, illetve képes lesz egyszerű alkalmazásokat fejleszteni és az elkészült alkalmazást fizikai vagy emulált Android ezközre telepíteni. A témakör nem köti meg az adott mobil fejlesztési technológiát, csak ajánlásokat tesz. Ajánlott technológiák: Native Java Android, React Native, Progressive Web App, Mobile Web alkalmazás</p>
-      <p>A témakörben az alábbi ismeretek és gyakorlati készségek elsajátítására kerül sor:</p>
-      <ul>
-        <li>Képes önállóan Android mobilalkalmazás-fejlesztői környezetet kialakítani, amely lehetőséget biztosít az alkalmazás fejlesztésére, fordítására, tesztelésére, publikálására, valamint Android ezközre történő telepítésére. Ajánlott eszközök és komponensek:</li>
-        <ul>
-          <li>Java: Android Studio, Android Emulator</li>
-          <li>React Native: Editor, NodeJS, npm, react-native, expo</li>
-          <li>Progressive Web App: Editor, NodeJS, npm, manifest, serviceWorker</li>
-        </ul>
-        <li>Képes önállóan egy "Hello, World!" alkalmazás fejlesztését és eszközre történő telepítését elvégezni (nem szükséges a Play Store-ba publikálás).</li>
-        <li>Képes interaktív felhasználói interfészek (UI) lefejlesztésére:</li>
-        <ul>
-          <li>UI-elemek létrehozása és elrendezése a képernyőn,</li>
-          <li>UI-elemek tartalmának dinamikus változtatása kódból (data binding),</li>
-          <li>UI-elemek interakciójának kezelése kódból.</li>
-        </ul>
-        <li>Képes képernyők közti navigációkezelést létrehozni.</li>
-        <li>Képes HTTP kérést küldeni és a választ lekezelni, szükség esetén a küldendő vagy érkező JSON-adatot szerializálni vagy deszerializálni.</li>
-        <li>Képes önállóan HTTP kérés eredményét tárolni és a UI-n megjeleníteni.</li>
-      </ul>
+        <p>A témakör célja, hogy a tanuló betekintést nyerjen a mobil alkalmazások fejlesztésének világába. A témakör elvégzése után a tanuló önállóan tud kialakítani fejlesztői környezetet Android alkalmazás fejlesztéséhez, illetve képes lesz egyszerű alkalmazásokat fejleszteni és az elkészült alkalmazást fizikai vagy emulált Android ezközre telepíteni. A témakör nem köti meg az adott mobil fejlesztési technológiát, csak ajánlásokat tesz. Ajánlott technológiák: Native Java Android, React Native, Progressive Web App, Mobile Web alkalmazás</p>
+        <p>A témakörben az alábbi ismeretek és gyakorlati készségek elsajátítására kerül sor:</p>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes önállóan Android mobilalkalmazás-fejlesztői környezetet kialakítani, amely lehetőséget biztosít az alkalmazás fejlesztésére, fordítására, tesztelésére, publikálására, valamint Android ezközre történő telepítésére. Ajánlott eszközök és komponensek:</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>Java: Android Studio, Android Emulator</li>
+              <li>React Native: Editor, NodeJS, npm, react-native, expo</li>
+              <li>Progressive Web App: Editor, NodeJS, npm, manifest, serviceWorker</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes önállóan egy "Hello, World!" alkalmazás fejlesztését és eszközre történő telepítését elvégezni (nem szükséges a Play Store-ba publikálás).</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes interaktív felhasználói interfészek (UI) lefejlesztésére:</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>UI-elemek létrehozása és elrendezése a képernyőn,</li>
+              <li>UI-elemek tartalmának dinamikus változtatása kódból (data binding),</li>
+              <li>UI-elemek interakciójának kezelése kódból.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes képernyők közti navigációkezelést létrehozni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes HTTP kérést küldeni és a választ lekezelni, szükség esetén a küldendő vagy érkező JSON-adatot szerializálni vagy deszerializálni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropdown-btn">Képes önállóan HTTP kérés eredményét tárolni és a UI-n megjeleníteni.</button>
+          <div class="dropdown-content">
+            <p>Ez az első panel tartalma.</p>
+            <p>További szöveg itt.</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>Csak az önálló tanulás bír tartós értékkel. &#x2022; <a href="https://www.demokratikusneveles.hu/blog/gatto-miert-nem-oktatnak/" target="_blank">John Taylor Gatto</a></p>
       <img src="../static/cc.logo.large.png" alt="cc">
     </footer>
+
+    <script src="panel.js"></script>
   </body>
 </html>
