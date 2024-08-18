@@ -18,7 +18,6 @@
       <h1>Fájlkezelés és objektumok</h1>
     </header>
 
-
     <main>
       <aside>
         <p><a href="../beginprog.html">Vissza</a></p>
@@ -46,12 +45,50 @@
         <p>#verziókezelés</p>
       </aside>
       <section>
-        <h1>Modulzáró</h1>
         <p>A program felbontása több modulra</p>
         <p>Fájlok: txt, csv, xml, json</p>
         <p>OOP és UML</p>
 
-        <p>III. modulzáró - fájlkezelés</p>
+        <h1>Python modulzáró feladat</h1>
+
+        <p>Feladat:</p>
+        <p>Készíts egy Python programot, amely az alábbi funkciókat valósítja meg:</p>
+
+        <h3>1. Fájlkezelés:</h3>
+        <p>   - Definiálj egy <code>Library</code> osztályt, amely kezeli a könyveket. A könyvek adatait egy JSON fájlban tárold, amely tartalmazza a könyv címét, szerzőjét és ISBN számát. Az osztály rendelkezzen az alábbi metódusokkal:</p>
+        <p>- <code>add_book(title, author, isbn)</code>: hozzáad egy új könyvet a JSON fájlhoz.</p>
+        <p>- <code>remove_book(isbn)</code>: eltávolít egy könyvet az ISBN szám alapján.</p>
+        <p>- <code>list_books()</code>: kiírja az összes könyvet a JSON fájlból.</p>
+
+        <h3>2. Kivételkezelés:</h3>
+        <p>- Gondoskodj arról, hogy a fájlműveletek során megfelelő kivételkezelést végezz, például:</p>
+        <p>- Ha a JSON fájl nem található, hozz létre egy új fájlt.</p>
+        <p>- Ha a JSON fájl érvénytelen, kezelj egy <code>json.JSONDecodeError</code> kivételt.</p>
+        <p>- Ha egy könyv törlése során az ISBN szám nem létezik, kezelj egy <code>KeyError</code> kivételt.</p>
+
+        <h3>3. Modulok és csomagok:</h3>
+        <p>- Használj modulokat és csomagokat a program különböző részeinek strukturálására. Például, a fájlkezelést és a kivételkezelést külön modulokban valósíthatod meg, és importálhatod őket az alapvető könyvtárkezelő osztályba.</p>
+
+        <h3>4. Objektum-orientált programozás:</h3>
+        <p>- Az egész programot objektum-orientált módon alakítsd ki. Az osztályok és metódusok használatával oldd meg a feladatokat, és ügyelj a megfelelő öröklődés és polimorfizmus alkalmazására, ha szükséges.</p>
+
+        <p>Példa JSON fájl tartalomra:</p>
+        <pre>
+    [
+        {
+            "title": "Python Programming",
+            "author": "John Doe",
+            "isbn": "1234567890"
+        },
+        {
+            "title": "Advanced Python",
+            "author": "Jane Smith",
+            "isbn": "0987654321"
+        }
+    ]
+        </pre>
+
+        <p><strong>Megjegyzés:</strong> Ügyelj a kód tisztaságára és dokumentációjára, valamint a megfelelő tesztelésre és hibakezelésre!</p>
       </section>
     </main>
     

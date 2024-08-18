@@ -18,7 +18,6 @@
       <h1>Algoritmusok és alprogramok</h1>
     </header>
 
-
     <main>
       <aside>
         <p><a href="../beginprog.html">Vissza</a></p>
@@ -57,7 +56,129 @@
         <p>Függvények, rekurzió, dekorátor</p>
         <p>Eljárás mint alprogram, a program felbontása több eljárásra. Könyvtárak</p>
 
-        <p>II modulzáró - algoritmusok</p>
+        <h1>Modulzáró feladat: "Iskolai jegykezelő rendszer"</h1>
+
+        <h3>Feladat:</h3>
+        <p>Készíts egy Python programot, amely egy egyszerű iskolai jegykezelő rendszert valósít meg. A rendszernek képesnek kell lennie a következő műveletekre:</p>
+        <ul>
+          <li><strong>Jegyek hozzáadása:</strong> A felhasználó képes legyen hozzáadni diákok neveit és az általuk kapott jegyeket.</li>
+          <li><strong>Jegyek kiértékelése:</strong> A program kiértékeli a diákok jegyeit és kiszámolja az átlagos jegyeket.</li>
+          <li><strong>Jegyek keresése:</strong> A felhasználó kereshet diákokat a nevük alapján, és megtekintheti az adott diák összes jegyét.</li>
+          <li><strong>Statisztikák megjelenítése:</strong> A program statisztikákat jelenít meg, például a legmagasabb és legalacsonyabb jegyeket, illetve az átlagjegyeket.</li>
+          <li><strong>Rendezetten megjelenítés:</strong> Az adatokat rendezetten és könnyen olvasható formában jelenítse meg.</li>
+        </ul>
+
+        <h3>Program funkcionalitás:</h3>
+        <ul>
+          <li><strong>Adatstruktúrák:</strong>
+            <ul>
+              <li><strong>Lista:</strong> Az adatok tárolására használd a diákok jegyeit.</li>
+              <li><strong>Szótár:</strong> Tárold a diákok neveit és az általuk kapott jegyeket. A kulcsok legyenek a diák nevei, az értékek pedig a jegyek listái.</li>
+              <li><strong>Tuple:</strong> A jegyeket tuple formájában tárold, ha a jegyek rögzítésére van szükséged.</li>
+              <li><strong>Halmaz:</strong> Használj halmazt a diákok neveinek gyors keresésére.</li>
+            </ul>
+          </li>
+          <li><strong>Függvények és eljárások:</strong>
+            <ul>
+              <li>Definiálj egy eljárást, amely lehetővé teszi új diákok és jegyek hozzáadását.</li>
+              <li>Definiálj egy függvényt, amely visszaadja egy diák összes jegyét.</li>
+              <li>Definiálj egy eljárást, amely kiszámolja és megjeleníti a statisztikákat, mint például az átlagos jegyek, legmagasabb és legalacsonyabb jegyek.</li>
+              <li>Definiálj egy függvényt, amely rendezi és kiírja a diákok jegyeit névsor szerint.</li>
+            </ul>
+          </li>
+          <li><strong>Algoritmusok és műveletek:</strong>
+            <ul>
+              <li>Használj ciklusokat a jegyek bejárására és kiértékelésére.</li>
+              <li>Használj elágazásokat az adatellenőrzéshez (pl. érvényes jegyformátum ellenőrzése).</li>
+              <li>Implementálj algoritmusokat az átlagos jegyek és a statisztikák kiszámítására, valamint a jegyek rendezésére.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Példa implementáció:</h3>
+        <pre>
+          <code>
+# Könyvtárak importálása
+from typing import List, Dict, Tuple, Set
+
+# Globális változók
+students: Dict[str, List[int]] = {}
+student_names: Set[str] = set()
+
+# Eljárás: Új diák és jegy hozzáadása
+def add_student(name: str, grades: List[int]):
+    global students, student_names
+    if name in student_names:
+        print(f"Diák {name} már létezik.")
+    else:
+        students[name] = grades
+        student_names.add(name)
+        print(f"Diák {name} hozzáadva a rendszerhez.")
+
+# Függvény: Diák jegyeinek visszaadása
+def get_grades(name: str) -> List[int]:
+    return students.get(name, [])
+
+# Eljárás: Jegyek statisztikáinak megjelenítése
+def display_statistics():
+    if not students:
+        print("Nincsenek diákok a rendszerben.")
+        return
+    
+    all_grades = [grade for grades in students.values() for grade in grades]
+    if not all_grades:
+        print("Nincsenek jegyek a rendszerben.")
+        return
+    
+    highest_grade = max(all_grades)
+    lowest_grade = min(all_grades)
+    average_grade = sum(all_grades) / len(all_grades)
+    
+    print(f"Legmagasabb jegy: {highest_grade}")
+    print(f"Legalacsonyabb jegy: {lowest_grade}")
+    print(f"Átlagos jegy: {average_grade:.2f}")
+
+# Eljárás: Diákok jegyeinek rendezetten történő megjelenítése
+def display_sorted_students():
+    for student in sorted(students.keys()):
+        print(f"Diák neve: {student}, Jegyek: {students[student]}")
+
+# Fő program
+def main():
+    while True:
+        print("\n1. Új diák és jegy hozzáadása")
+        print("2. Diák jegyeinek megtekintése")
+        print("3. Statikus megjelenítése")
+        print("4. Diákok jegyeinek rendezett megjelenítése")
+        print("5. Kilépés")
+        
+        choice = input("Válassz egy opciót: ")
+        
+        if choice == "1":
+            name = input("Add meg a diák nevét: ")
+            grades = list(map(int, input("Add meg a jegyeket szóközökkel elválasztva: ").split()))
+            add_student(name, grades)
+        elif choice == "2":
+            name = input("Add meg a diák nevét: ")
+            grades = get_grades(name)
+            if grades:
+                print(f"{name} jegyei: {grades}")
+            else:
+                print("Nincs ilyen diák vagy nincs jegye.")
+        elif choice == "3":
+            display_statistics()
+        elif choice == "4":
+            display_sorted_students()
+        elif choice == "5":
+            print("Kilépés...")
+            break
+        else:
+            print("Érvénytelen választás, próbáld újra.")
+
+if __name__ == "__main__":
+    main()
+          </code>
+        </pre>
       </section>
     </main>
     

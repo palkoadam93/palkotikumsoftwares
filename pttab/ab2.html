@@ -21,15 +21,28 @@
         
     <main>
       <aside>
-        <p><a href="../abintro.html">Vissza</a></p>
+        <p><a href="../beginprog.html">Vissza</a></p>
+        <nav>
+          <ul>
+            <li><a href="ab1.html">I. Az adatbázis-tervezés alapjai</a></li>
+            <li><a href="#" id="aktiv">I. Adatbázisok létrehozása</a></li>
+            <li><a href="ab3.html">I. Adatok kezelése</a></li>
+            <li><a href="ab4.html">I. Lekérdezések</a></li>
+            <li><a href="ab5.html">I. Adatbázisok mentése és helyreállítása</a></li>
+            <li><a href="ab21.html">II. Adatbázis-tervezés</a></li>
+            <li><a href="ab22.html">II. Haladó lekérdezések</a></li>
+            <li><a href="ab23.html">II. Adatvezérlő utasítások</a></li>
+            <li><a href="ab24.html">II. Tárolt objektumok</a></li>
+            <li><a href="ab25.html">II. Az adatbázis-kezelés osztályai</a></li>
+          </ul>
+        </nav>
       </aside>
       <section>
-        <h1>Adatvezérlő utasítások</h1>
-        <p>A témakör célja, hogy a tanulók megismerjék a tranzakciókezelés alapjait, legyenek képesek felhasználók és jogosultságok kezelésére.</p>
-        <p>A témakör elvégzését követően a tanuló ismeri:</p>
+        <h1>Adatbázisok létrehozása (DDL) (2+10 óra)</h1>
+        <p>A témakör célja, hogy a tanulók megismerjék az adatbázis-kezelésnél használt DDL-parancsok használatát, a legfontosabb mezőtípusok és záradékok alkalmazását. A témakör elvégzése után a tanuló képes lesz egyszerű adatbázisok létrehozására:</p>
 
         <div class="dropdown">
-          <button class="dropdown-btn">a tranzakció alapvető tulajdonságait (atomiság, konzisztencia, elszigetelés, tartósság),</button>
+          <button class="dropdown-btn">Használja a CREATE utasítást adatbázisok és táblák létrehozására.</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>
@@ -37,7 +50,7 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropdown-btn">az izolációs szinteket,</button>
+          <button class="dropdown-btn">Ismeri a választott SQL-szerver legfontosabb adattípusait.</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>
@@ -45,7 +58,7 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropdown-btn">az utasításokat, melyeket nem lehet visszavonni,</button>
+          <button class="dropdown-btn">Ismeri a táblák létrehozásánál alkalmazható mezőszintű és táblaszintű záradékokat (NULL, NOT NULL, UNIQUE, PRIMARY KEY, REFERENCES stb.).</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>
@@ -53,7 +66,7 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropdown-btn">az utasításokat, melyek implicit végrehajtást vonnak maguk után,</button>
+          <button class="dropdown-btn">Ismeri az indexek szerepét és létrehozását.</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>
@@ -61,7 +74,7 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropdown-btn">a tranzakciókezelés utasításait (pl.: SET/START TRANSACTION, COMMIT, ROLLBACK stb.),</button>
+          <button class="dropdown-btn">Használja a DROP utasítást adatbázisok, táblák és indexek törlésére.</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>
@@ -69,39 +82,7 @@
         </div>
 
         <div class="dropdown">
-          <button class="dropdown-btn">a zárolási utasításokat (pl.: LOCK/UNLOCK TABLES),</button>
-          <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-btn">a beépített (rendszer) felhasználók szerepét,</button>
-          <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-btn">a felhasználók kezelésére szolgáló parancsokat (CREATE/DELETE USER),</button>
-          <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-btn">a jogok típusait, a SHOW GRANTS, GRANT és REVOKE parancsok használatát,</button>
-          <div class="dropdown-content">
-            <p>Ez az első panel tartalma.</p>
-            <p>További szöveg itt.</p>
-          </div>
-        </div>
-
-        <div class="dropdown">
-          <button class="dropdown-btn">a ROLE-ok szerepét és használatát (pl.: CREATE/DROP ROLE, SET ROLE).</button>
+          <button class="dropdown-btn">Használja az ALTER utasítást adatbázisok, táblák és indexek módosítására.</button>
           <div class="dropdown-content">
             <p>Ez az első panel tartalma.</p>
             <p>További szöveg itt.</p>

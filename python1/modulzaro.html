@@ -18,7 +18,6 @@
       <h1>Adatok és kifejezések</h1>
     </header>
 
-
     <main>
       <aside>
         <p><a href="../beginprog.html">Vissza</a></p>
@@ -47,9 +46,65 @@
         <p>#verziókezelés</p>
       </aside>
       <section>
-        <h1>Adatok és kifejezések</h1>
+        <h1>Modulzáró feladat I.: "Gondoltam egy számot, találd ki" játék</h1>
 
-        <p>I. modulzáró - "Gondoltam egy számot, találd ki"</p>
+        <h3>Feladat leírása:</h3>
+        <p>Ebben a feladatban egy egyszerű számkitaláló játékot fogsz készíteni Pythonban. A program véletlenszerűen kiválaszt egy számot egy megadott tartományban (például 1 és 100 között), majd felhívja a felhasználót, hogy próbálja meg kitalálni ezt a számot. A játék addig tart, amíg a felhasználó el nem találja a helyes számot.</p>
+
+        <h3>Feladat részletei:</h3>
+        <ol>
+          <li>A program véletlenszerűen generáljon egy számot 1 és 100 között. Ehhez használd a Python <code>random</code> modulját.</li>
+          <li>Kérd meg a felhasználót, hogy adjon meg egy tippet a <code>input()</code> függvénnyel.</li>
+          <li>A program minden tipp után adjon visszajelzést:</li>
+            <ul>
+              <li>Ha a tipp kisebb, mint a gondolt szám, írd ki, hogy "A gondolt szám nagyobb!".</li>
+              <li>Ha a tipp nagyobb, mint a gondolt szám, írd ki, hogy "A gondolt szám kisebb!".</li>
+              <li>Ha a tipp helyes, írd ki, hogy "Gratulálok! Eltaláltad a számot!" és zárd le a játékot.</li>
+            </ul>
+          <li>A játék addig fusson, amíg a felhasználó el nem találja a helyes számot.</li>
+          <li>A program a végén írja ki, hogy hány próbálkozásból találta el a felhasználó a számot.</li>
+        </ol>
+
+        <h3>Tippek:</h3>
+        <ul>
+          <li>Használd a <code>while</code> ciklust a folyamatos próbálkozások kezelésére.</li>
+          <li>Figyelj a helyes visszajelzések megadására a felhasználó számára.</li>
+        </ul>
+
+        <p><strong>Cél:</strong> Ez a feladat segít a ciklusok, feltételes elágazások, változók és a véletlenszerű számgenerálás gyakorlásában. Próbálj meg minél hatékonyabb és felhasználóbarátabb programot írni!</p>
+
+        <p>Sok sikert a feladat megoldásához!</p>
+
+        <h1>Modulzáró feladat II.: "Gondolj egy számra, a program kitalálja" játék</h1>
+
+        <h3>Feladat leírása:</h3>
+        <p>Ebben a feladatban egy olyan programot fogsz írni Pythonban, amely megpróbálja kitalálni, hogy a felhasználó melyik számra gondolt. A felhasználó egy adott tartományban (például 1 és 100 között) választ egy számot, és a program próbálja azt kitalálni úgy, hogy minden egyes próbálkozás után visszajelzést kap: a szám nagyobb, kisebb, vagy eltalálta a helyes számot.</p>
+
+        <h3>Feladat részletei:</h3>
+        <ol>
+          <li>A program kérdezze meg a felhasználótól a számok tartományát (pl. 1 és 100 között).</li>
+          <li>Indítsd el a programot egy tetszőleges kezdő tippel, például a tartomány közepén lévő számmal.</li>
+          <li>Minden tipp után a felhasználónak meg kell adnia, hogy a program tippje:</li>
+            <ul>
+              <li>kisebb, mint a gondolt szám,</li>
+              <li>nagyobb, mint a gondolt szám, vagy</li>
+              <li>egyenlő a gondolt számmal.</li>
+            </ul>
+          <li>A program ennek megfelelően szűkítse a lehetséges számok tartományát, és adjon új tippet.</li>
+          <li>A játék addig folytatódjon, amíg a program el nem találja a helyes számot.</li>
+          <li>A program a végén írja ki, hogy hány próbálkozásra volt szükség a helyes szám kitalálásához.</li>
+        </ol>
+
+        <h3>Tippek:</h3>
+        <ul>
+          <li>Használd a bináris keresés módszerét a hatékony tippeléshez.</li>
+          <li>Figyelj arra, hogy a program mindig a tartomány közepén lévő számmal tippeljen, így gyorsabban eléri a megoldást.</li>
+          <li>Gondoskodj arról, hogy a program kezelje a felhasználó helytelen visszajelzéseit is, például ha egy tipp már a tartományon kívül esik.</li>
+        </ul>
+
+        <p><strong>Cél:</strong> Ez a feladat segít megérteni a bináris keresést és a feltételes elágazások kezelését Pythonban. Próbáld meg minél kevesebb lépésből kitaláltatni a programmal a felhasználó gondolt számát!</p>
+
+        <p>Sok sikert a feladat megoldásához!</p>
       </section>
     </main>
     
