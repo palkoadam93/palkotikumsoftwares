@@ -23,11 +23,11 @@
         <p><a href="../beginprog.html">Vissza</a></p>
         <nav>
           <ul>
+            <li><a href="#" id="aktiv">Algoritmusok (elmélet)</a></li>
             <li><a href="ciklus.html">1. Ciklusok</a></li>
             <li><a href="elagazas.html">2. Elágazások</a></li>
             <li><a href="lista.html">3. Lista</a></li>
-            <li><a href="#" id="aktiv">4.1. Algoritmusok (elmélet)</a></li>
-            <li><a href="algoritmusok.html">4.2. Algoritmusok (Python)</a></li>
+            <li><a href="algoritmusok.html">4. Algoritmusok (Python)</a></li>
             <li><a href="szotar.html">5.1. Szótár</a></li>
             <li><a href="halmaz.html">5.2. Halmaz</a></li>
             <li><a href="tuple.html">5.3. Tuple</a></li>
@@ -40,7 +40,18 @@
         </nav>
       </aside>
       <section>
-        <h1>Algoritmusok</h1>
+        <p>Tartalom</p>
+        <ul id="t">
+          <li><a href="#alg">Algoritmusok</a></li>
+          <li><a href="#origin">Az algoritmus eredete</a></li>
+          <li><a href="#bjt">Mi az algoritmus?</a></li>
+          <li><a href="#ciklus">Ciklus</a></li>
+          <li><a href="#elag">Elágazás</a></li>
+          <li><a href="#foly">Folyamatábra</a></li>
+          <li><a href="#strukt">Struktogram</a></li>
+        </ul>
+
+        <h1 id="alg">Algoritmusok</h1>
 
         <h3>Algoritmizálás alapjai</h3>
         <p><a href="https://drive.google.com/file/d/1_X3XHQZx_GQ9YiiALL-sKnglcPeYzsnq/view?usp=sharing" target=_blank>1. Bevezetés</a></p>
@@ -59,10 +70,412 @@
         <h3>VisuAlgo</h3>
         <p><a href="https://visualgo.net/en" target="_blank">VisuAlgo</a></p>
 
-        <h3>Ciklus</h3>
-        <h3>Elágazás</h3>
-        <h3>Folyamatábra</h3>
-        <h3>Struktogram</h3>
+        <h1 id="origin">Az algoritmus eredete</h1>
+
+        <p>Al-Hvárizmi (teljes nevén Muhammad ibn Músza al-Khwarizmi) egy perzsa matematikus, csillagász, geográfus és tudós volt, aki a 9. század elején élt és dolgozott. Őt tartják a modern algebra és a számelmélet egyik alapítójának, és munkássága jelentős hatással volt az európai matematikára is.</p>
+
+        <h3>Al-Hvárizmi élete és munkássága</h3>
+        <p>Al-Hvárizmi valószínűleg Kr.u. 780 körül született Khoraszán tartományban, amely a mai Üzbegisztán területén található. Az Abbászida Kalifátus alatt élt és dolgozott, különösen a Bagdadban található "Bölcsesség Házában" (Bayt al-Hikma), amely a korszak egyik legfontosabb tudományos központja volt.</p>
+        <p>Legjelentősebb matematikai műve az „Al-Kitáb al-Muhtasar fí Hiszáb al-Dzsabr val-Mukábala” (Rövid könyv a visszaállításról és az egyensúlyról), amely a matematikai egyenletek megoldásáról szól. Ez a mű vezette be az "algebra" szót, amely az "al-dzsabr" arab kifejezésből származik. Az algebra itt egy olyan módszerként jelenik meg, amely az egyenletek egyensúlyozására és egyszerűsítésére szolgál.</p>
+
+        <h3>Az algoritmus eredete</h3>
+        <p>Az "algoritmus" szó Al-Hvárizmi nevéből származik. Munkái révén vált ismertté Európában a 12. században, amikor is latinra fordították őket. A latin fordítás során neve "Algoritmi" formában jelent meg, ami később az "algorismus" szót eredményezte, amelyből az "algoritmus" alakult ki.</p>
+        <p>Az algoritmus fogalmát Al-Hvárizmi leginkább az indiai számrendszer és a matematikai eljárások bemutatásával kapcsolta össze. Az egyik legfontosabb hozzájárulása az volt, hogy ismertette a hindu-arab számrendszert, amely a nulla használatával lehetővé tette a helyi értékes számírást. Munkájában lépésről lépésre írta le a különféle aritmetikai műveletek végrehajtását, ami a mai értelemben vett algoritmusok egyik korai formája.</p>
+
+        <h3>Al-Hvárizmi hatása</h3>
+        <p>Al-Hvárizmi munkássága nemcsak a matematika, hanem a csillagászat, a földrajz és más tudományágak fejlődéséhez is hozzájárult. Munkái az iszlám aranykorának szellemi fejlődésében játszottak kulcsszerepet, és jelentős hatást gyakoroltak a középkori Európa tudományos életére is. Az algebra és az algoritmusok alapjainak lerakásával alapvetően formálta a modern tudomány és technológia fejlődését.</p>
+
+        <h1 id="bjt">Mi az algoritmus?</h1>
+
+        <p>A Böhm-Jacopini tétel a számítástudományban és a programozási elméletben fontos eredmény, amely alapvetően meghatározza, hogyan lehet bármilyen algoritmust strukturált módon megvalósítani. A tételt Corrado Böhm és Giuseppe Jacopini olasz matematikusok vezették be 1966-ban. A tétel lényege, hogy bármilyen számítógépes program megírható kizárólag három alapvető vezérlési struktúra használatával: szekvenciák, feltételek és ciklusok.</p>
+
+        <h3>A Böhm-Jacopini tétel megfogalmazása</h3>
+        <p>A tétel állítása szerint minden determinisztikus algoritmus, amelyet egy véges automata képes végrehajtani, átírható egyenértékű, strukturált programra, amely kizárólag a következő három vezérlési szerkezetet használja:</p>
+        <ol>
+          <li><strong>Szekvencia:</strong> Az utasítások egymás utáni végrehajtása.</li>
+          <li><strong>Feltételes elágazás (selection):</strong> <code>if-then-else</code> szerkezetek, amelyek döntés alapján választják ki a végrehajtandó utasítások ágát.</li>
+          <li><strong>Iteráció (ciklus, repetition):</strong> Olyan ciklusszerkezetek, mint a <code>while</code> vagy <code>for</code>, amelyek egy feltétel teljesüléséig ismétlik az utasításokat.</li>
+        </ol>
+
+        <h3>Jelentősége</h3>
+        <p>A Böhm-Jacopini tétel nagy jelentőségű a szoftverfejlesztés és a programozás elmélete szempontjából, mert kimondja, hogy nincs szükség goto utasításokra vagy hasonló nem strukturált vezérlési szerkezetekre ahhoz, hogy komplex algoritmusokat írjunk. A tétel alapjaiban változtatta meg a programozási nyelvek tervezését és a programozási paradigmák fejlődését, mivel azt sugallja, hogy a programozók elkerülhetik a „spagetti kódot” (a goto utasítások túlzott használatával jellemezhető, nehezen követhető kódokat).</p>
+
+        <h3>Példa</h3>
+        <p>Képzeljük el, hogy van egy egyszerű program, amely egy számot ellenőriz, hogy pozitív vagy negatív, majd ennek megfelelően egy másik eljárást hajt végre, és végül addig ismétli a folyamatot, amíg az input érték nem lesz nulla. Egy strukturálatlan program esetében ezt goto utasításokkal lehetne megvalósítani, de a Böhm-Jacopini tétel szerint ugyanez a logika átírható egy strukturált programra kizárólag a három alapvető vezérlési szerkezet használatával.</p>
+
+        <h3>A tétel korlátai</h3>
+        <p>Fontos megjegyezni, hogy a Böhm-Jacopini tétel csak a determinisztikus programokra érvényes, vagyis olyan programokra, amelyekben minden állapotban egyértelműen meghatározott a következő állapot. A nem determinisztikus programokra és rendszerekre a tétel nem alkalmazható közvetlenül. Ezenkívül a tétel csak elméleti jelentőségű, mivel a gyakorlatban néha a strukturálatlan programozás (például alacsony szintű optimalizációk vagy speciális esetek kezelése során) előnyösebb lehet.</p>
+
+        <h3>Történelmi kontextus és hatás</h3>
+        <p>A Böhm-Jacopini tétel megjelenése után néhány éven belül megkezdődött a strukturált programozás mozgalom, amely nagy hatással volt az olyan programozási nyelvek kifejlődésére, mint a Pascal, a C és később a Java. Ez a tétel motiválta Edsger Dijkstra híres esszéjét is, amelyben azt írta: "Goto statement considered harmful", ezzel is hangsúlyozva a strukturált programozás fontosságát és a goto utasítások elkerülésének szükségességét.</p>
+
+        <p>Összességében a Böhm-Jacopini tétel az informatika egyik alappillére, amely az algoritmusok tervezésének és a programozási nyelvek fejlődésének fontos elméleti alapját képezi.</p>
+
+        <h1 id="ciklus">Ciklus</h1>
+
+        <p>A ciklus, más néven iteráció vagy loop, egy alapvető vezérlési szerkezet a programozásban, amely lehetővé teszi, hogy egy adott kódrészletet többször végrehajtsunk. A ciklusokat akkor használjuk, ha egy műveletet ismételten végre kell hajtani, amíg egy adott feltétel teljesül. A ciklusok a programok hatékonyságát és olvashatóságát növelik, mivel lehetővé teszik a kód tömörítését és az ismétlődő feladatok automatizálását.</p>
+
+        <h3>Ciklus típusok</h3>
+        <p>A programozásban többféle ciklus létezik, de a leggyakoribbak a következők:</p>
+
+<ul>
+    <li>
+        <strong>For ciklus</strong>:
+        <p>Olyan ciklus, amely előre meghatározott számú iterációt hajt végre. Általában akkor használatos, ha előre tudjuk, hányszor szeretnénk ismételni a műveletet.</p>
+        <p>Példa (Python):</p>
+        <pre><code>for i in range(5):
+    print(i)</code></pre>
+        <p>Ez a ciklus 0-tól 4-ig (összesen 5 alkalommal) kiírja az <code>i</code> változó értékét.</p>
+    </li>
+
+    <li>
+        <strong>While ciklus</strong>:
+        <p>Olyan ciklus, amely addig ismétli a kódrészletet, amíg a megadott feltétel igaz. A feltétel minden iteráció elején ellenőrzésre kerül, és ha hamissá válik, a ciklus megszakad.</p>
+        <p>Példa (Python):</p>
+        <pre><code>i = 0
+while i &lt; 5:
+    print(i)
+    i += 1</code></pre>
+        <p>Ez a ciklus addig ismétli a <code>print</code> utasítást, amíg az <code>i</code> változó értéke kisebb 5-nél.</p>
+    </li>
+
+    <li>
+        <strong>Do-while ciklus</strong>:
+        <p>Ez a ciklus a while ciklus egy változata, amely legalább egyszer végrehajtja a ciklus törzsét, majd utána ellenőrzi a feltételt. Mivel a feltétel a végén van ellenőrizve, a ciklus legalább egyszer mindig lefut.</p>
+        <p>Példa (C++):</p>
+        <pre><code>int i = 0;
+do {
+    cout &lt;&lt; i &lt;&lt; endl;
+    i++;
+} while (i &lt; 5);</code></pre>
+        <p>Ez a ciklus szintén 0-tól 4-ig írja ki az <code>i</code> változó értékét.</p>
+    </li>
+</ul>
+
+        <h3>Ciklusvezérlő utasítások</h3>
+        <p>A ciklusok működését különféle vezérlő utasításokkal befolyásolhatjuk:</p>
+
+<ul>
+    <li>
+        <strong>break</strong>:
+        <p>
+            Az aktuális ciklus azonnali megszakítására szolgál. Ha a <code>break</code> utasítás végrehajtásra kerül, a ciklus befejeződik, és a vezérlés a ciklus utáni utasításra ugrik.
+        </p>
+        <p>Példa (Python):</p>
+        <pre><code>for i in range(10):
+    if i == 5:
+        break
+    print(i)</code></pre>
+        <p>Ez a ciklus csak 0-tól 4-ig írja ki az <code>i</code> változó értékét, mivel 5-nél megszakad.</p>
+    </li>
+
+    <li>
+        <strong>continue</strong>:
+        <p>Ez az utasítás átugorja a ciklus aktuális iterációjának hátralevő részét, és a ciklus következő iterációjára ugrik.</p>
+        <p>Példa (Python):</p>
+        <pre><code>for i in range(5):
+    if i == 2:
+        continue
+    print(i)</code></pre>
+        <p>Ebben a ciklusban az <code>i</code> értéke 2-nél kihagyásra kerül, így a kimenet 0, 1, 3, 4 lesz.</p>
+    </li>
+</ul>
+
+        <h3>Használati esetek</h3>
+        <p>A ciklusok széles körben alkalmazhatók számos feladat elvégzésére, például:</p>
+
+<ul>
+    <li>
+        <strong>Listaelemek feldolgozása</strong>:
+        <p>Egy listán végighaladva feldolgozhatjuk annak elemeit.</p>
+        <p>Példa:</p>
+        <pre><code>numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num * 2)</code></pre>
+        <p>Ez a ciklus minden elemet kétszeresére növel és kiírja az eredményt.</p>
+    </li>
+
+    <li>
+        <strong>Összegek vagy átlagok számítása</strong>:
+        <p>Összegzési vagy átlagolási feladatok megoldására is kiválóak.</p>
+        <p>Példa:</p>
+        <pre><code>sum = 0
+for i in range(1, 6):
+    sum += i
+print("Sum:", sum)</code></pre>
+        <p>Ez a ciklus 1-től 5-ig összeadja a számokat és kiírja az eredményt.</p>
+    </li>
+
+        <li>
+          <strong>Felhasználói input ismételt kérése</strong>:
+          <p>Addig kérhetünk be adatot a felhasználótól, amíg egy érvényes bemenetet nem kapunk.</p>
+          <p>Példa:</p>
+        <pre><code>while True:
+    num = input("Enter a positive number: ")
+    if num.isdigit() and int(num) > 0:
+        break
+    print("Invalid input. Try again.")</code></pre>
+            <p>Ez a ciklus addig fut, amíg a felhasználó egy pozitív számot nem ad meg.</p>
+          </li>
+        </ul>
+
+        <h3>Összefoglalás</h3>
+        <p>A ciklusok elengedhetetlen eszközei a programozóknak, mivel lehetővé teszik az ismétlődő feladatok hatékony végrehajtását. A különféle ciklusfajták és vezérlő utasítások kombinálásával komplex feladatokat is egyszerűbbé és kezelhetőbbé tehetünk a kódon belül.</p>
+
+        <h1 id="elag">Elágazás</h1>
+
+        <p>Az elágazás, más néven feltételes elágazás vagy döntési struktúra, egy olyan vezérlési szerkezet a programozásban, amely lehetővé teszi, hogy a program különböző utasításokat hajtson végre attól függően, hogy egy adott feltétel igaz vagy hamis. Az elágazásokat akkor használjuk, ha a programnak egy adott helyzetben döntést kell hoznia, és ennek megfelelően más-más irányba kell folytatnia a végrehajtást.</p>
+
+        <h3>Elágazás típusok</h3>
+        <p>Az elágazásoknak több típusa létezik, a leggyakrabban használtak a következők:</p>
+
+<ul>
+    <li>
+        <strong>If-else szerkezet</strong>:
+        <p>Az <code>if</code> szerkezetet akkor használjuk, ha egy adott feltétel igazságát szeretnénk ellenőrizni. Ha a feltétel igaz, a hozzá tartozó kódrészlet kerül végrehajtásra. Az <code>else</code> ágat akkor használjuk, ha azt szeretnénk, hogy egy másik kódrészlet hajtódjon végre, ha a feltétel hamis.</p>
+        <p>Példa (Python):</p>
+        <pre><code>x = 10
+if x &gt; 5:
+    print("x nagyobb, mint 5")
+else:
+    print("x kisebb vagy egyenlő, mint 5")</code></pre>
+        <p>Ebben a példában, mivel <code>x</code> nagyobb, mint 5, az <code>"x nagyobb, mint 5"</code> üzenet kerül kiírásra.</p>
+    </li>
+
+    <li>
+        <strong>Elágazás több ággal (elif)</strong>:
+        <p>Az <code>elif</code> (else if) szerkezetet akkor használjuk, ha több feltételt szeretnénk egymás után ellenőrizni. Az első igaz feltételhez tartozó kódrészlet kerül végrehajtásra, a többi elágazás pedig kihagyásra kerül.</p>
+        <p>Példa (Python):</p>
+        <pre><code>x = 10
+if x &gt; 10:
+    print("x nagyobb, mint 10")
+elif x == 10:
+    print("x egyenlő 10-zel")
+else:
+    print("x kisebb, mint 10")</code></pre>
+        <p>Ebben a példában, mivel <code>x</code> egyenlő 10-zel, az <code>"x egyenlő 10-zel"</code> üzenet kerül kiírásra.</p>
+    </li>
+
+    <li>
+        <strong>Beágyazott elágazás</strong>:
+        <p>Beágyazott elágazásról beszélünk, ha egy elágazás másik elágazásban található. Ezzel lehetőség nyílik komplexebb döntési struktúrák kialakítására.</p>
+        <p>Példa (Python):</p>
+        <pre><code>x = 10
+y = 20
+if x &gt; 5:
+    if y &gt; 15:
+        print("x nagyobb, mint 5 és y nagyobb, mint 15")
+    else:
+        print("x nagyobb, mint 5, de y nem nagyobb, mint 15")
+else:
+    print("x nem nagyobb, mint 5")</code></pre>
+        <p>Ebben a példában, mivel <code>x</code> nagyobb 5-nél és <code>y</code> nagyobb 15-nél, az <code>"x nagyobb, mint 5 és y nagyobb, mint 15"</code> üzenet kerül kiírásra.</p>
+    </li>
+</ul>
+
+        <h3>Használati esetek</h3>
+        <p>Az elágazások használata széles körben elterjedt, például:</p>
+
+<ul>
+    <li>
+        <strong>Felhasználói input feldolgozása</strong>:
+        <p>Az elágazások segítségével különböző műveleteket hajthatunk végre a felhasználó által megadott értékek alapján.</p>
+        <p>Példa:</p>
+        <pre><code>age = int(input("Add meg az életkorodat: "))
+if age &gt;= 18:
+    print("Nagykorú vagy.")
+else:
+    print("Kiskorú vagy.")</code></pre>
+        <p>Ebben a példában a felhasználó életkorától függően különböző üzenetek jelennek meg.</p>
+    </li>
+
+    <li>
+        <strong>Játéklogika megvalósítása</strong>:
+        <p>A játékokban elágazásokkal dönthetjük el, hogy mi történjen a játékos bizonyos cselekvései után.</p>
+        <p>Példa:</p>
+        <pre><code>score = 75
+if score &gt;= 100:
+    print("Győztél!")
+else:
+    print("Próbáld újra!")</code></pre>
+        <p>Ebben a példában a játékos pontszámától függ, hogy győzött-e vagy sem.</p>
+    </li>
+
+    <li>
+        <strong>Adatok érvényességének ellenőrzése</strong>:
+        <p>Az elágazások lehetővé teszik az adatok érvényességének ellenőrzését, mielőtt további feldolgozásra kerülnének.</p>
+        <p>Példa:</p>
+        <pre><code>number = -10
+if number &gt;= 0:
+    print("A szám pozitív.")
+else:
+    print("A szám negatív.")</code></pre>
+        <p>Ebben a példában az adott szám előjelétől függően különböző üzenetek jelennek meg.</p>
+    </li>
+</ul>
+
+        <h3>Összefoglalás</h3>
+        <p>Az elágazások nélkülözhetetlen elemei a programozásnak, mivel lehetővé teszik, hogy a program különböző döntéseket hozzon és ennek megfelelően különböző kódrészleteket hajtson végre. Az elágazások használata elengedhetetlen a programok logikájának kialakításához és az alkalmazások dinamikus működéséhez.</p>
+
+        <h1 id="foly">Folyamatábra</h1>
+
+        <p>A folyamatábra egy grafikus eszköz, amely egy folyamat vagy algoritmus lépéseit ábrázolja különböző szimbólumok és vonalak segítségével. A folyamatábrák rendkívül hasznosak a problémák megértésében, a megoldási lépések megtervezésében, valamint a programok és rendszerek működésének vizuális bemutatásában. Az egyszerű ábrázolás segíti a bonyolult folyamatok áttekinthetőségét, és lehetővé teszi a logikai hibák könnyebb azonosítását.</p>
+
+        <h3>Folyamatábra szimbólumok</h3>
+        <p>A folyamatábrák különböző szimbólumokat használnak a különféle műveletek és lépések ábrázolására. Az alábbiakban a leggyakrabban használt szimbólumokat mutatjuk be:</p>
+
+<ul>
+    <li>
+        <strong>Ovál (Kezdő és záró pont)</strong>:
+        <p>Az ovális alakzat jelöli a folyamat kezdő- és végpontját. A folyamat kezdetét és végét mutatja be.</p>
+    </li>
+    <li>
+        <strong>Téglalap (Feldolgozási lépés)</strong>:
+        <p>A téglalap szimbólumot egy adott művelet vagy feldolgozási lépés ábrázolására használjuk. Ez a szimbólum képviseli a folyamat során végrehajtandó feladatokat.</p>
+    </li>
+    <li>
+        <strong>Paralelogramma (Bemenet/Kimenet)</strong>:
+        <p>A paralelogramma a bemeneti és kimeneti műveleteket jelzi, például adatbevitel vagy eredmény megjelenítése.</p>
+    </li>
+    <li>
+        <strong>Rombusz (Döntés)</strong>:
+        <p>A rombusz alakzatot döntési pontok ábrázolására használják, ahol a folyamat ága elágazik különböző irányokba attól függően, hogy a feltétel igaz vagy hamis.</p>
+    </li>
+    <li>
+        <strong>Nyíl (Folyamat iránya)</strong>:
+        <p>A nyíl mutatja a folyamat áramlásának irányát egyik lépéstől a másikig. Segítségével követhető a folyamat logikai sorrendje.</p>
+    </li>
+</ul>
+
+        <h3>Folyamatábra készítése</h3>
+        <p>A folyamatábra készítése során fontos, hogy a lépéseket logikus sorrendben rendezzük el, és minden szükséges döntési pontot, feldolgozási lépést és bemeneti/kimeneti műveletet ábrázoljunk. A következő lépéseket kell követni:</p>
+
+<ol>
+    <li>
+        <strong>Probléma meghatározása</strong>: 
+        <p>Kezdjük a folyamat vagy probléma céljának meghatározásával.</p>
+    </li>
+    <li>
+        <strong>Fő lépések azonosítása</strong>: 
+        <p>Azonosítsuk a fő lépéseket, amelyek szükségesek a probléma megoldásához vagy a folyamat végrehajtásához.</p>
+    </li>
+    <li>
+        <strong>Döntési pontok azonosítása</strong>: 
+        <p>Határozzuk meg, hol kell döntést hozni, és milyen feltételek mellett történjenek elágazások.</p>
+    </li>
+    <li>
+        <strong>Folyamatábra szimbólumok alkalmazása</strong>: 
+        <p>Rajzoljuk meg a folyamatábrát a megfelelő szimbólumok használatával, hogy vizuálisan ábrázoljuk a folyamatot.</p>
+    </li>
+    <li>
+        <strong>Folyamatábra ellenőrzése</strong>: 
+        <p>Ellenőrizzük az ábrát a logikai hibák vagy hiányosságok kiküszöbölése érdekében.</p>
+    </li>
+</ol>
+
+        <h3>Folyamatábra használati esetek</h3>
+        <p>A folyamatábrák számos területen alkalmazhatók, többek között:</p>
+
+<ul>
+    <li>
+        <strong>Algoritmusok tervezése</strong>:
+        <p>A programozásban a folyamatábrák segítségével ábrázolhatók az algoritmusok lépései, mielőtt kódba írjuk őket.</p>
+    </li>
+    <li>
+        <strong>Üzleti folyamatok modellezése</strong>:
+        <p>Az üzleti folyamatok elemzésére és optimalizálására szolgál, mivel egyértelműen ábrázolja a folyamatok lépéseit.</p>
+    </li>
+    <li>
+        <strong>Oktatás</strong>:
+        <p>Az oktatásban a folyamatábrák segítenek a tanulóknak megérteni a komplex folyamatokat és összefüggéseket.</p>
+    </li>
+</ul>
+
+        <h3>Összefoglalás</h3>
+        <p>A folyamatábra egy hatékony vizuális eszköz a folyamatok és algoritmusok ábrázolására, amely segít a bonyolult rendszerek megértésében és a problémamegoldásban. A jól megtervezett folyamatábra világos és átlátható képet ad a folyamat lépéseiről és azok sorrendjéről, ami megkönnyíti a kommunikációt és az elemzést.</p>
+
+        <h1 id="strukt">Struktogram</h1>
+
+        <p>A struktogram, más néven Nassi-Shneiderman diagram, egy grafikus eszköz, amelyet algoritmusok és programozási feladatok logikai szerkezetének vizuális megjelenítésére használnak. A struktogram az algoritmus blokkokra bontását és ezek hierarchikus kapcsolatainak bemutatását segíti elő. Ez a módszer különösen hasznos a struktúrált programozásban, mivel a program szerkezetét lépésről lépésre ábrázolja.</p>
+
+        <h3>Struktogram felépítése</h3>
+        <p>A struktogramokat egyszerű, téglalap alakú blokkok alkotják, amelyek egymásra épülnek. Minden blokk egy-egy műveletet, döntést vagy ciklust reprezentál. A blokkok közötti hierarchikus kapcsolat az algoritmus logikai sorrendjét tükrözi. Az alábbiakban bemutatjuk a struktogram fő elemeit:</p>
+
+<ul>
+    <li>
+        <strong>Szekvencia (sorozat)</strong>:
+        <p>
+            A szekvencia az algoritmus egyszerű egymásutániságát mutatja. Az egymást követő lépések mindegyike végrehajtódik a struktogram bal felső sarkától kezdve lefelé haladva.
+        </p>
+    </li>
+    <li>
+        <strong>Elágazás (döntés)</strong>:
+        <p>
+            Az elágazás blokk egy döntési pontot jelöl, ahol az algoritmus két vagy több útvonalra ágazik szét, attól függően, hogy a feltétel igaz vagy hamis.
+        </p>
+        <p>Példa:</p>
+        <pre><code>Ha feltétel igaz:
+    hajtsd végre ezt
+Különben:
+    hajtsd végre azt</code></pre>
+    </li>
+    <li>
+        <strong>Ciklus</strong>:
+        <p>
+            A ciklus blokk egy olyan szerkezetet jelöl, amelyben egy adott művelet vagy műveletsorozat többször ismétlődik, amíg egy feltétel teljesül.
+        </p>
+        <p>Példa:</p>
+        <pre><code>Amíg feltétel igaz:
+    ismételd a műveletet</code></pre>
+    </li>
+</ul>
+
+        <h3>Struktogram használata</h3>
+        <p>A struktogramokat az algoritmusok és programok logikai felépítésének megtervezésére és dokumentálására használják. A következő lépések segítségével készíthetünk struktogramot:</p>
+
+<ol>
+    <li>
+        <strong>Feladat elemzése</strong>: 
+        <p>Azonosítsuk a megoldandó problémát vagy feladatot, és bontsuk azt kisebb részekre.</p>
+    </li>
+    <li>
+        <strong>Alapvető struktúrák meghatározása</strong>: 
+        <p>Azonosítsuk a szekvenciákat, elágazásokat és ciklusokat a feladatban.</p>
+    </li>
+    <li>
+        <strong>Blokkok rajzolása</strong>: 
+        <p>Rajzoljuk meg a struktogram blokkjait, kezdve a legfelső művelettel, majd haladjunk lefelé a hierarchiában.</p>
+    </li>
+    <li>
+        <strong>Kapcsolatok ábrázolása</strong>: 
+        <p>Kössük össze a blokkokat, hogy megmutassuk az algoritmus logikai áramlását.</p>
+    </li>
+    <li>
+        <strong>Ellenőrzés</strong>: 
+        <p>Ellenőrizzük a struktogramot a logikai hibák és a helytelen lépésrendek kiküszöbölése érdekében.</p>
+    </li>
+</ol>
+
+        <h3>Előnyök</h3>
+        <p>A struktogramok használatának számos előnye van:</p>
+
+<ul>
+    <li>
+        <strong>Átláthatóság</strong>:
+        <p>A struktogramok segítik az algoritmus logikai felépítésének vizuális megjelenítését, ami átláthatóbbá és könnyebben érthetővé teszi a programokat.</p>
+    </li>
+    <li>
+        <strong>Hibakeresés</strong>:
+        <p>A vizuális ábrázolás megkönnyíti a logikai hibák észrevételét és kijavítását.</p>
+    </li>
+    <li>
+        <strong>Dokumentáció</strong>:
+        <p>A struktogramok hatékonyan dokumentálják a programok működését, ami hasznos lehet a későbbi karbantartás vagy fejlesztés során.</p>
+    </li>
+</ul>
+
+        <h3>Összefoglalás</h3>
+        <p>A struktogramok fontos eszközök a programozók számára, mivel lehetővé teszik az algoritmusok és programok logikai felépítésének világos, strukturált ábrázolását. Az egyszerű blokkszerkezetek segítségével könnyen követhetővé válnak a program logikai lépései, és megkönnyítik a kódolás és a hibakeresés folyamatát.</p>
       </section>
     </main>
     <footer>
