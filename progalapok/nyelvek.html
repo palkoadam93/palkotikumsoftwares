@@ -35,11 +35,22 @@
         </nav>
       </aside>
       <section>
+        <p>Tartalom</p>
+        <ul id="t">
+          <li><a href="#mach">A gépi kód</a></li>
+          <li><a href="#mikoze">Mi köze a programozási nyelvnek a gépi kódhoz?</a></li>
+          <li><a href="#szintu">Alacsony szintű és magas szintű programozási nyelvek</a></li>
+          <li><a href="#gen">A programozási nyelvek generációi</a></li>
+          <li><a href="#psz">A pszeudokód</a></li>
+          <li><a href="#szisze">Szintaxis és szemantika</a></li>
+          <li><a href="#vid">További anyagok</a></li>
+        </ul>
+
         <h1>Programozási nyelvek</h1>
 
         <p><a href="https://drive.google.com/file/d/1SQuVJWUn4sltv6By7M8nedIRBj8bzurD/view?usp=sharing" target=_blank>A programozási nyelvek története, fejlődése</a></p>
 
-        <h1>A gépi kód</h1>
+        <h1 id="mach">A gépi kód</h1>
 
         <p>A gépi kód a számítógépek központi feldolgozó egysége (CPU) által közvetlenül végrehajtható utasítások sorozata. Ez a legalacsonyabb szintű szoftveres réteg, amely közvetlenül vezérli a hardver működését. A gépi kód bináris számjegyekből (bitek, azaz 0 és 1) áll, amelyeket a CPU értelmez és hajt végre.</p>
 
@@ -58,7 +69,7 @@
         <p>A programozók általában magasabb szintű programozási nyelveken, mint például C, Java, vagy Python írnak kódot, amelyet egy fordítóprogram (compiler) vagy tolmácsprogram (interpreter) alakít át gépi kóddá, hogy a CPU végre tudja hajtani. Az Assembly nyelv például már közelebb áll a gépi kódhoz, de még mindig ember által értelmezhetőbb.</p>
         <p>Összességében a gépi kód az a forma, amelyben egy program közvetlenül kommunikál a számítógép hardverével.</p>
 
-        <h1>Mi köze a programozási nyelvnek a gépi kódhoz?</h1>
+        <h1 id="mikoze">Mi köze a programozási nyelvnek a gépi kódhoz?</h1>
 
         <p>A programozási nyelvek és a gépi kód közötti kapcsolat szoros, mivel a programozási nyelvek fő célja, hogy lehetővé tegyék a fejlesztők számára a számítógépek irányítását anélkül, hogy közvetlenül gépi kódban kellene írniuk a programokat.</p>
 
@@ -81,7 +92,7 @@
         <p>A magas szintű kódot a fordító vagy tolmács program alakítja át gépi kóddá, amit a számítógép közvetlenül végrehajthat.</p>
         <p>Az Assembly nyelv egy alacsony szintű nyelv, amely szorosabban kapcsolódik a gépi kódhoz, de még mindig egy lépcsőfokkal magasabb szinten áll a közvetlen bináris utasításoknál.</p>
 
-        <h1>Alacsony szintű és magas szintű programozási nyelvek</h1>
+        <h1 id="szintu">Alacsony szintű és magas szintű programozási nyelvek</h1>
 
         <h3>Alacsony szintű programozási nyelv</h3>
         <p>Az alacsony szintű programozási nyelvek közel állnak a számítógép hardveréhez, és közvetlen hozzáférést biztosítanak a memória és a processzor működéséhez. Ezek a nyelvek nagyon hatékonyak, mivel minimális absztrakcióval rendelkeznek, és a hardver specifikus utasításokkal dolgoznak. Az alacsony szintű nyelvek közé tartozik a gépi kód és az Assembly nyelv.</p>
@@ -103,7 +114,25 @@
           <li><strong>Kevésbé hatékony:</strong> A magas szintű nyelvek általában kevésbé hatékonyak, mint az alacsony szintűek, mivel a hardverhez való közvetlen hozzáférés hiányzik, és több réteg absztrakciót használnak.</li>
         </ul>
 
-        <h1>A pszeudokód</h1>
+        <h1 id="gen">A programozási nyelvek generációi</h1>
+        <p>A programozási nyelveket történelmük és fejlettségük alapján generációkba soroljuk. Minden generáció újabb absztrakciós szintet hozott a programozásba, megkönnyítve ezzel a kódírást és a programok karbantartását.</p>
+
+        <h3>Első generáció (1GL): Gépi nyelv</h3>
+        <p>Az első generációs nyelvek a gépi nyelvet jelentik, amely a számítógép központi feldolgozó egysége (CPU) által közvetlenül végrehajtható bináris kódot tartalmazza. Ezek a nyelvek hardverközeli és nagyon hatékonyak, de rendkívül nehezen programozhatók és karbantarthatók.</p>
+
+        <h3>Második generáció (2GL): Assembly nyelv</h3>
+        <p>A második generációs nyelvek az Assembly nyelvet foglalják magukba, amely az első generációs gépi kód ember által olvashatóbb formája. Az Assembly nyelv egy-egy utasítása közvetlenül megfelel egy gépi kódú utasításnak, de szimbólumokkal dolgozik, ami megkönnyíti a programozást.</p>
+
+        <h3>Harmadik generáció (3GL): Magas szintű nyelvek</h3>
+        <p>A harmadik generációs nyelvek már magas szintű programozási nyelvek, mint például a C, C++, Java, és Python. Ezek a nyelvek sokkal közelebb állnak a természetes nyelvhez, és számos absztrakciós réteget kínálnak, amelyek elrejtik a hardver részleteit. Ez megkönnyíti a programozást és a kód karbantartását, ugyanakkor a program fordításra szorul, hogy gépi kódra alakítsák át.</p>
+
+        <h3>Negyedik generáció (4GL): Magasabb szintű nyelvek</h3>
+        <p>A negyedik generációs nyelvek még magasabb szintűek, és általában egy adott célra vagy feladatra specializálódtak. Ide tartoznak az adatbázis-kezelő nyelvek, mint például az SQL, valamint a riport- és lekérdezéskezelő nyelvek. Ezek a nyelvek lehetővé teszik a bonyolult feladatok egyszerűbb megfogalmazását.</p>
+
+        <h3>Ötödik generáció (5GL): Logikai és mesterséges intelligencia nyelvek</h3>
+        <p>Az ötödik generációs nyelvek közé tartoznak azok a nyelvek, amelyeket a mesterséges intelligencia (MI) és a logikai programozás területén használnak, mint például a Prolog és a Lisp. Ezek a nyelvek lehetővé teszik a gépi tanulás, az automatizált következtetések és a logikai érvelés megvalósítását.</p>
+
+        <h1 id="psz">A pszeudokód</h1>
 
         <p>A pszeudokód egy olyan, félformális kódleíró nyelv, amelyet arra használnak, hogy algoritmusokat és programok logikáját emberi érthetőségű módon leírják. A pszeudokód nem követi egy konkrét programozási nyelv szintaxisát, hanem egyszerű, hétköznapi nyelvi kifejezéseket használ, amelyeket könnyen megérthetnek mind a programozók, mind a nem programozók.</p>
 
@@ -143,7 +172,7 @@ KÜLÖNBEN
 
         <p>Összefoglalva, a pszeudokód egy hasznos eszköz az algoritmusok megértéséhez és tervezéséhez, amely hidat képez a programozás logikája és a konkrét kódolási folyamat között.</p>
 
-        <h1>Szintaxis és szemantika</h1>
+        <h1 id="szisze">Szintaxis és szemantika</h1>
 
         <p>A <strong>szintaxis</strong> és a <strong>szemantika</strong> két alapvető fogalom a programozásban és a nyelvészetben, amelyek a nyelv szerkezetére és jelentésére vonatkoznak.</p>
 
@@ -190,7 +219,7 @@ KÜLÖNBEN
           <li><strong>Szemantika:</strong> A nyelv vagy kód jelentése. Ez határozza meg, hogy a helyes szintaxissal írt kód milyen viselkedést vagy eredményt eredményez.</li>
         </ol>
 
-        <h1>Videós anyagok</h1>
+        <h1 id="vid">További anyagok</h1>
 
         <h3>Programozás Karrier - Programozási nyelvek</h3>
         <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ty5gqryG0J8?si=RCdLNF7c6mokk9GZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
