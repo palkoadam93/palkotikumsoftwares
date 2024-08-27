@@ -40,6 +40,7 @@
           <li><a href="#mach">A gépi kód</a></li>
           <li><a href="#mikoze">Mi köze a programozási nyelvnek a gépi kódhoz?</a></li>
           <li><a href="#szintu">Alacsony szintű és magas szintű programozási nyelvek</a></li>
+          <li><a href="#fk">A forráskód</a></li>
           <li><a href="#gen">A programozási nyelvek generációi</a></li>
           <li><a href="#psz">A pszeudokód</a></li>
           <li><a href="#szisze">Szintaxis és szemantika</a></li>
@@ -66,7 +67,7 @@
         <p>Ebben a példában az első része a "10110000" az utasításkódot jelöli, amely lehet például egy "MOV" utasítás, ami egy adatot tölt be egy regiszterbe. A "01100001" rész pedig az adatot tartalmazza, amit be kell tölteni.</p>
 
         <h3>Fordítás magasabb szintű nyelvekből:</h3>
-        <p>A programozók általában magasabb szintű programozási nyelveken, mint például C, Java, vagy Python írnak kódot, amelyet egy fordítóprogram (compiler) vagy tolmácsprogram (interpreter) alakít át gépi kóddá, hogy a CPU végre tudja hajtani. Az Assembly nyelv például már közelebb áll a gépi kódhoz, de még mindig ember által értelmezhetőbb.</p>
+        <p>A programozók általában magasabb szintű programozási nyelveken, mint például C, Java, vagy Python írnak kódot, amelyet egy fordítóprogram (compiler) vagy értelmező (interpreter) alakít át gépi kóddá, hogy a CPU végre tudja hajtani. Az Assembly nyelv például már közelebb áll a gépi kódhoz, de még mindig ember által értelmezhetőbb.</p>
         <p>Összességében a gépi kód az a forma, amelyben egy program közvetlenül kommunikál a számítógép hardverével.</p>
 
         <h1 id="mikoze">Mi köze a programozási nyelvnek a gépi kódhoz?</h1>
@@ -89,7 +90,7 @@
 
         <h3>Összefoglalva:</h3>
         <p>A programozási nyelvek lehetővé teszik a fejlesztők számára, hogy ember számára érthetőbb módon írjanak programokat.</p>
-        <p>A magas szintű kódot a fordító vagy tolmács program alakítja át gépi kóddá, amit a számítógép közvetlenül végrehajthat.</p>
+        <p>A magas szintű kódot a fordító vagy értelmező program alakítja át gépi kóddá, amit a számítógép közvetlenül végrehajthat.</p>
         <p>Az Assembly nyelv egy alacsony szintű nyelv, amely szorosabban kapcsolódik a gépi kódhoz, de még mindig egy lépcsőfokkal magasabb szinten áll a közvetlen bináris utasításoknál.</p>
 
         <h1 id="szintu">Alacsony szintű és magas szintű programozási nyelvek</h1>
@@ -110,9 +111,26 @@
         <p><strong>Jellemzői:</strong></p>
         <ul>
           <li><strong>Könnyű használat:</strong> A magas szintű nyelvek egyszerűbb szintaxissal rendelkeznek, ami megkönnyíti a kódolást és az olvasást.</li>
-          <li><strong>Portabilitás:</strong> A magas szintű nyelvekkel írt programok általában hordozhatóak, és különböző platformokon is futtathatók, mivel a fordítók vagy tolmácsok elvégzik a gépi kódra való fordítást.</li>
+          <li><strong>Portabilitás:</strong> A magas szintű nyelvekkel írt programok általában hordozhatóak, és különböző platformokon is futtathatók, mivel a fordítók vagy értelmezők elvégzik a gépi kódra való fordítást.</li>
           <li><strong>Kevésbé hatékony:</strong> A magas szintű nyelvek általában kevésbé hatékonyak, mint az alacsony szintűek, mivel a hardverhez való közvetlen hozzáférés hiányzik, és több réteg absztrakciót használnak.</li>
         </ul>
+
+        <h1 id="fk">A forráskód</h1>
+
+        <p>A forráskód egy számítógépes program vagy alkalmazás írott változata, amelyet egy programozási nyelv segítségével hoztak létre. A forráskódot általában emberi programozók írják és olvassák, és olyan szöveges formátumban van, amelyet speciális szerkesztőkben (például szövegszerkesztőkben vagy integrált fejlesztőkörnyezetekben, azaz IDE-kben) lehet szerkeszteni.</p>
+
+        <p>A forráskód:</p>
+        <ol>
+          <li><strong>A program logikáját és működését határozza meg:</strong> A forráskódban leírt utasítások határozzák meg, hogyan működik a program, milyen feladatokat hajt végre, és hogyan reagál a különböző eseményekre vagy felhasználói interakciókra.</li>
+          <li><strong>Fordítás vagy értelmezés szükséges:</strong> A forráskódot általában nem lehet közvetlenül futtatni a számítógépen. A forráskódot le kell fordítani gépi kódra (amit a számítógép processzora közvetlenül ért) egy fordítóprogram (compiler) segítségével, vagy értelmezni kell egy interpreter segítségével, amely lépésről lépésre végrehajtja az utasításokat.</li>
+          <li><strong>Emberi olvashatóságú:</strong> A forráskódot olyan nyelven írják, amelyet programozók könnyen megértenek. Ez magában foglalhatja az angol nyelvű szavakat, szintaktikai szabályokat, és különböző struktúrákat (például ciklusokat, feltételes utasításokat).</li>
+        </ol>
+
+        <p>Például a következő sor egy egyszerű Python forráskód, amely kiírja a "Hello, World!" üzenetet:</p>
+
+        <code>print("Hello, World!")</code>
+
+        <p>A forráskód tehát az alapja minden szoftvernek, és elengedhetetlen a programok fejlesztéséhez, karbantartásához és módosításához.</p>
 
         <h1 id="gen">A programozási nyelvek generációi</h1>
         <p>A programozási nyelveket történelmük és fejlettségük alapján generációkba soroljuk. Minden generáció újabb absztrakciós szintet hozott a programozásba, megkönnyítve ezzel a kódírást és a programok karbantartását.</p>
