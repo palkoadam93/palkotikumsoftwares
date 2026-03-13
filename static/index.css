@@ -81,7 +81,7 @@ button a:hover {
         background-size:cover;
     }
     #webprog {
-        background-image: url("../projektmunka/blogging-7308532_1280.png");
+        background-image: url("../img/blogging-7308532_1280.png");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
@@ -89,7 +89,7 @@ button a:hover {
     }
     
     #projekt {
-        background-image: url("../projektmunka/projekt.jpg");
+        background-image: url("../img/projekt.jpg");
         background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
         background-repeat: no-repeat;
         background-position: center;
